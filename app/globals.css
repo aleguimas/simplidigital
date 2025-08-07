@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --simpli-green: #A1FF00;
+  --simpli-teal: #00E0D7;
 }
 
 @theme inline {
@@ -22,5 +24,35 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Garantir que as cores personalizadas sejam aplicadas */
+.bg-gradient-simpli {
+  background: linear-gradient(to right, var(--simpli-green), var(--simpli-teal)) !important;
+}
+
+.bg-simpli-green {
+  background-color: var(--simpli-green) !important;
+}
+
+.bg-simpli-teal {
+  background-color: var(--simpli-teal) !important;
+}
+
+.text-simpli-green {
+  color: var(--simpli-green) !important;
+}
+
+.text-simpli-teal {
+  color: var(--simpli-teal) !important;
+}
+
+.from-simpli-green {
+  --tw-gradient-from: var(--simpli-green);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(161, 255, 0, 0));
+}
+
+.to-simpli-teal {
+  --tw-gradient-to: var(--simpli-teal);
 }

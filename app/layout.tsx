@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,12 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Simplí Inovação Digital",
-  description: "Consultoria e desenvolvimento para transformação digital.",
-  keywords: ["transformação digital", "consultoria", "desenvolvimento", "tecnologia", "inovação"],
-  authors: [{ name: "Simplí Inovação Digital" }],
-  creator: "Simplí Inovação Digital",
-  publisher: "Simplí Inovação Digital",
+  title: {
+    default: "Simplí Digital - Transformação Digital e Inovação",
+    template: "%s | Simplí Digital"
+  },
+  description: "Transformação digital e inovação para empresas que buscam se destacar no mercado. Consultoria especializada em desenvolvimento web, aplicações mobile e estratégia digital.",
+  keywords: ["transformação digital", "consultoria", "desenvolvimento web", "aplicações mobile", "estratégia digital", "tecnologia", "inovação", "startup", "empresa digital"],
+  authors: [{ name: "Simplí Digital" }],
+  creator: "Simplí Digital",
+  publisher: "Simplí Digital",
   formatDetection: {
     email: false,
     address: false,
@@ -33,23 +37,25 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt_BR',
     url: 'https://simpli-digital.com',
-    siteName: 'Simplí Inovação Digital',
-    title: 'Simplí Inovação Digital',
-    description: 'Consultoria e desenvolvimento para transformação digital.',
+    siteName: 'Simplí Digital',
+    title: 'Simplí Digital - Transformação Digital e Inovação',
+    description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
     images: [
       {
-        url: 'https://simpli-digital.com/og-image.jpg',
+        url: 'https://simpli-digital.com/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Simplí Inovação Digital',
+        alt: 'Simplí Digital - Transformação Digital',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Simplí Inovação Digital',
-    description: 'Consultoria e desenvolvimento para transformação digital.',
-    images: ['https://simpli-digital.com/og-image.jpg'],
+    title: 'Simplí Digital - Transformação Digital e Inovação',
+    description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
+    images: ['https://simpli-digital.com/images/og-image.jpg'],
+    creator: '@simplidigital',
+    site: '@simplidigital',
   },
   robots: {
     index: true,
@@ -92,6 +98,47 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <GoogleAnalytics />
+        
+        {/* JSON-LD Organization Schema */}
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Simplí Digital',
+              url: 'https://simpli-digital.com',
+              logo: 'https://simpli-digital.com/images/logo-simpli-digital.webp',
+              description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'São Paulo',
+                addressRegion: 'SP',
+                addressCountry: 'BR'
+              },
+              contactPoint: {
+                '@type': 'ContactPoint',
+                telephone: '+55-81-99194-2628',
+                contactType: 'customer service',
+                email: 'contato@simpli-digital.com'
+              },
+              sameAs: [
+                'https://linkedin.com/company/simpli-digital',
+                'https://twitter.com/simplidigital',
+                'https://instagram.com/simplidigital'
+              ],
+              founder: {
+                '@type': 'Person',
+                name: 'Simplí Digital Team'
+              },
+              foundingDate: '2020',
+              industry: 'Technology',
+              keywords: 'transformação digital, consultoria, desenvolvimento web, aplicações mobile, estratégia digital'
+            })
+          }}
+        />
+        
         {children}
       </body>
     </html>

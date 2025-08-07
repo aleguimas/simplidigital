@@ -1,44 +1,135 @@
-import { DefaultSeo } from 'next-seo';
+import Head from 'next/head';
 
-const SEO = () => {
+interface SEOProps {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  twitterCard?: string;
+  noIndex?: boolean;
+  breadcrumbs?: Array<{
+    name: string;
+    url: string;
+  }>;
+}
+
+const SEO = ({
+  title,
+  description,
+  canonical,
+  ogImage = '/images/og-image.jpg',
+  ogType = 'website',
+  twitterCard = 'summary_large_image',
+  noIndex = false,
+  breadcrumbs = []
+}: SEOProps) => {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://simpli-digital.com';
+  const fullUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
+  const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+
+  // JSON-LD para Organization
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Simplí Digital',
+    url: siteUrl,
+    logo: `${siteUrl}/images/logo-simpli-digital.webp`,
+    description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'São Paulo',
+      addressRegion: 'SP',
+      addressCountry: 'BR'
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+55-81-99194-2628',
+      contactType: 'customer service',
+      email: 'contato@simpli-digital.com'
+    },
+    sameAs: [
+      'https://linkedin.com/company/simpli-digital',
+      'https://twitter.com/simplidigital',
+      'https://instagram.com/simplidigital'
+    ],
+    founder: {
+      '@type': 'Person',
+      name: 'Simplí Digital Team'
+    },
+    foundingDate: '2020',
+    industry: 'Technology',
+    keywords: 'transformação digital, consultoria, desenvolvimento web, aplicações mobile, estratégia digital'
+  };
+
+  // JSON-LD para BreadcrumbList
+  const breadcrumbSchema = breadcrumbs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: `${siteUrl}${item.url}`
+    }))
+  } : null;
+
   return (
-    <DefaultSeo
-      titleTemplate="%s | Simplí Inovação Digital"
-      defaultTitle="Simplí Inovação Digital"
-      description="Consultoria e desenvolvimento para transformação digital."
-      canonical="https://simpli-digital.com"
-      openGraph={{
-        type: 'website',
-        locale: 'pt_BR',
-        url: 'https://simpli-digital.com',
-        siteName: 'Simplí Inovação Digital',
-        title: 'Simplí Inovação Digital',
-        description: 'Consultoria e desenvolvimento para transformação digital.',
-        images: [
-          {
-            url: 'https://simpli-digital.com/og-image.jpg',
-            width: 1200,
-            height: 630,
-            alt: 'Simplí Inovação Digital',
-          },
-        ],
-      }}
-      twitter={{
-        handle: '@simplidigital',
-        site: '@simplidigital',
-        cardType: 'summary_large_image',
-      }}
-      additionalMetaTags={[
-        {
-          name: 'viewport',
-          content: 'width=device-width, initial-scale=1',
-        },
-        {
-          name: 'theme-color',
-          content: '#000000',
-        },
-      ]}
-    />
+    <Head>
+      {/* Meta tags básicas */}
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="robots" content={noIndex ? 'noindex,nofollow' : 'index,follow'} />
+      
+      {/* Canonical URL */}
+      {canonical && <link rel="canonical" href={fullUrl} />}
+
+      {/* Open Graph */}
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={fullUrl} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:image" content={fullOgImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="Simplí Digital" />
+      <meta property="og:locale" content="pt_BR" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content={twitterCard} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={fullOgImage} />
+      <meta name="twitter:site" content="@simplidigital" />
+      <meta name="twitter:creator" content="@simplidigital" />
+
+      {/* Meta tags adicionais */}
+      <meta name="author" content="Simplí Digital" />
+      <meta name="keywords" content="transformação digital, consultoria, desenvolvimento web, aplicações mobile, estratégia digital, tecnologia, inovação" />
+      <meta name="theme-color" content="#00E0E0" />
+      
+      {/* Favicon */}
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+      
+      {/* JSON-LD Schemas */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema)
+        }}
+      />
+      
+      {breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema)
+          }}
+        />
+      )}
+    </Head>
   );
 };
 

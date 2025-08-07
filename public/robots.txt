@@ -1,4 +1,12 @@
+# *
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
 
-Sitemap: https://simpli-digital.com/sitemap.xml 
+# Host
+Host: https://simpli-digital.com
+
+# Sitemaps
+Sitemap: https://simpli-digital.com/sitemap.xml
