@@ -1,47 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
-
-// Lazy load do componente Lottie
-const Lottie = dynamic(() => import('lottie-react'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-64 bg-gray-100 rounded-lg animate-pulse flex items-center justify-center">
-      <div className="text-gray-400">Carregando animação...</div>
-    </div>
-  ),
-});
+import Image from 'next/image';
 
 interface HeroProps {
   onScrollToContact: () => void;
 }
 
 const Hero = ({ onScrollToContact }: HeroProps) => {
-  const [lottieData, setLottieData] = useState(null);
-  const [isLottieLoaded, setIsLottieLoaded] = useState(false);
-
-  // Lazy load do JSON da Lottie
-  useEffect(() => {
-    const loadLottieData = async () => {
-      try {
-        // Carrega o arquivo JSON da animação
-        const response = await fetch('/animations/digital-transformation.json');
-        const lottieData = await response.json();
-        
-        setLottieData(lottieData);
-        setIsLottieLoaded(true);
-      } catch (error) {
-        console.error('Erro ao carregar animação Lottie:', error);
-        // Fallback para uma animação simples caso o arquivo não carregue
-        setIsLottieLoaded(true);
-      }
-    };
-
-    // Carrega a animação após um pequeno delay para lazy loading
-    const timer = setTimeout(loadLottieData, 100);
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleScrollToContact = () => {
     onScrollToContact();
@@ -61,16 +26,16 @@ const Hero = ({ onScrollToContact }: HeroProps) => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-simpli-green/10 to-transparent rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-simpli-teal/10 to-transparent rounded-full blur-3xl"></div>
       <div className="relative z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Texto e Botões */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-simpli-teal mb-6 leading-tight">
-              Simplificando a{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-simpli-green to-simpli-teal">
-                Transformação Digital
-              </span>
-            </h1>
+                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+               <span className="text-simpli-teal">Simplificando a</span>{' '}
+               <span className="text-transparent bg-clip-text bg-gradient-to-r from-simpli-green to-simpli-teal">
+                 Transformação Digital
+               </span>
+             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
               Transformamos ideias em soluções digitais inovadoras que impulsionam seu negócio.
@@ -100,27 +65,31 @@ const Hero = ({ onScrollToContact }: HeroProps) => {
             </div>
           </div>
 
-          {/* Animação Lottie */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md lg:max-w-lg">
-              {isLottieLoaded && lottieData ? (
-                <Lottie
-                  animationData={lottieData}
-                  loop={true}
-                  autoplay={true}
-                  style={{ width: '100%', height: 'auto' }}
-                  className="rounded-lg shadow-2xl"
-                />
-              ) : (
-                <div className="w-full h-64 bg-gradient-to-br from-simpli-green/20 to-simpli-teal/20 rounded-lg flex items-center justify-center">
-                  <div className="text-gray-500 text-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-simpli-green mx-auto mb-4"></div>
-                    <p>Carregando animação...</p>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
+                     {/* Marca Simplí */}
+           <div className="flex justify-center lg:justify-end">
+             <div className="relative w-full max-w-lg">
+               <div className="w-full h-80 bg-white rounded-2xl shadow-xl flex items-center justify-center p-12 relative overflow-hidden">
+                 {/* Background gradient overlay */}
+                 <div className="absolute inset-0 bg-gradient-to-br from-simpli-green/5 to-simpli-teal/5"></div>
+                 
+                 {/* Marca Simplí */}
+                 <div className="relative z-10">
+                   <Image
+                     src="/images/marca-simpli.png"
+                     alt="Marca Simplí"
+                     width={400}
+                     height={300}
+                     className="w-full h-auto max-w-sm"
+                     priority
+                   />
+                 </div>
+                 
+                 {/* Decorative elements */}
+                 <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-simpli-green/20 to-simpli-teal/20 rounded-full blur-xl"></div>
+                 <div className="absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-tr from-simpli-teal/20 to-simpli-green/20 rounded-full blur-lg"></div>
+               </div>
+             </div>
+           </div>
         </div>
       </div>
       </div>
