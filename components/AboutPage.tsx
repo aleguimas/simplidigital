@@ -222,7 +222,7 @@ const AboutPage = () => {
                                <h3 className="text-2xl font-bold text-gray-900 mb-2">Alexandre Guimarães</h3>
                 <p className="text-simpli-teal font-semibold mb-4">O Estrategista</p>
                <p className="text-gray-600 mb-4">
-                 Transformação Digital e Inteligência Artificial com mais de 20 anos de gestão corporativa.
+                 Transformação Digital e Inteligência Artificial com 20+ anos de gestão corporativa.
                </p>
                <div className="flex justify-center space-x-4">
                  <a href="https://aleguimas.com.br" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-simpli-teal transition-colors">
@@ -262,7 +262,7 @@ const AboutPage = () => {
                               <h3 className="text-2xl font-bold text-gray-900 mb-2">Luciano Fernandes</h3>
                 <p className="text-simpli-teal font-semibold mb-4">O Professor</p>
                <p className="text-gray-600 mb-4">
-                 Visual Merchandising e Trade Marketing com mais de 35 anos de experiência no mercado.
+                 Visual Merchandising e Trade Marketing com 35+ anos de experiência no mercado.
                </p>
                <div className="flex justify-center space-x-4">
                  <a href="https://instagram.com/lucianofconsultor" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-simpli-teal transition-colors">
