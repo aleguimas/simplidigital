@@ -1,6 +1,6 @@
 import Script from 'next/script';
 
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX';
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-J4VGVQG24C';
 
 const GoogleAnalytics = () => {
   return (
