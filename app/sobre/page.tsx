@@ -8,7 +8,7 @@ export default function Sobre() {
   return (
     <>
       <SEO
-        title="Sobre a Simplí Digital"
+        title="Sobre a Simplí"
         description="Conheça nossa história, missão, visão e valores. Somos especialistas em transformação digital com anos de experiência no mercado."
         canonical="/sobre"
         ogImage="/images/about-hero.jpg"

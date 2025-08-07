@@ -108,17 +108,21 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20" style={{ background: '#1f2937' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
             Pronto para Transformar seu Negócio?
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-300">
             Entre em contato conosco e descubra como podemos ajudar sua empresa a crescer no mundo digital.
           </p>
           <button
             onClick={scrollToContact}
-            className="bg-gradient-simpli text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+            className="px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+            style={{
+              background: 'linear-gradient(to right, #7ACC00, #00B8B0)',
+              color: 'white'
+            }}
           >
             Fale Conosco
           </button>

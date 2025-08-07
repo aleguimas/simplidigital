@@ -280,17 +280,21 @@ export default function TrafegoPago() {
         </section>
 
         {/* CTA Section */}
-        <section ref={contactRef} className="py-20 bg-gradient-simpli text-white">
+        <section ref={contactRef} className="py-20" style={{ background: '#1f2937' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Pronto para Aumentar suas Vendas?
             </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-300">
               Entre em contato conosco e descubra como o tráfego pago pode impulsionar seus resultados.
             </p>
             <button
               onClick={handleScrollToContact}
-              className="bg-white text-simpli-green px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
+              className="px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              style={{
+                background: 'linear-gradient(to right, #7ACC00, #00B8B0)',
+                color: 'white'
+              }}
             >
               Solicitar Orçamento
             </button>
