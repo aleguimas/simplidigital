@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Simplí Inovação Digital
 
-## Getting Started
+Site institucional da Simplí Inovação Digital - Consultoria e desenvolvimento para transformação digital.
 
-First, run the development server:
+## 🚀 Tecnologias
 
+- **Next.js 15** - Framework React com App Router
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Framework CSS utilitário
+- **next-i18next** - Internacionalização
+- **next-seo** - Gerenciamento de SEO
+- **Google Analytics** - Análise de dados
+
+## 📋 Pré-requisitos
+
+- Node.js 18+ 
+- npm ou yarn
+
+## 🛠️ Instalação
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd simpli-digital
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Configure as variáveis de ambiente:
+Crie um arquivo `.env.local` na raiz do projeto com:
+```env
+# Google Analytics
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Site URL
+NEXT_PUBLIC_SITE_URL=https://simpli-digital.com
+```
 
-## Learn More
+4. Execute o projeto em desenvolvimento:
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+5. Acesse [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌍 Internacionalização
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O projeto suporta três idiomas:
+- **pt-BR** (Português Brasileiro) - Padrão
+- **en-US** (Inglês Americano)
+- **es-ES** (Espanhol)
 
-## Deploy on Vercel
+### Estrutura de Traduções
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+public/locales/
+├── pt-BR/
+│   └── common.json
+├── en-US/
+│   └── common.json
+└── es-ES/
+    └── common.json
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Estrutura do Projeto
+
+```
+simpli-digital/
+├── app/                    # App Router (Next.js 13+)
+│   ├── layout.tsx         # Layout principal
+│   ├── page.tsx           # Página inicial
+│   ├── sobre/             # Página Sobre
+│   ├── consultorias/      # Página Consultorias
+│   └── contato/           # Página Contato
+├── components/            # Componentes reutilizáveis
+│   ├── Navigation.tsx     # Navegação
+│   ├── Footer.tsx         # Rodapé
+│   ├── SEO.tsx            # SEO global
+│   └── GoogleAnalytics.tsx # Google Analytics
+├── public/                # Arquivos estáticos
+│   ├── locales/           # Arquivos de tradução
+│   └── assets/            # Imagens e outros assets
+├── styles/                # Estilos adicionais
+└── next-i18next.config.js # Configuração i18n
+```
+
+## ⚙️ Configurações
+
+### Tailwind CSS
+- Purge ativado para otimização de CSS
+- Configuração personalizada de cores e fontes
+- Responsividade completa
+
+### SEO
+- Meta tags otimizadas
+- Open Graph configurado
+- Twitter Cards
+- Schema.org markup
+
+### Performance
+- Lazy loading de imagens
+- Divisão automática de código por rota
+- Compressão Gzip ativada
+- Otimizações de CSS
+
+## 🚀 Deploy
+
+### Vercel (Recomendado)
+1. Conecte seu repositório ao Vercel
+2. Configure as variáveis de ambiente
+3. Deploy automático
+
+### Outras Plataformas
+O projeto é compatível com qualquer plataforma que suporte Next.js.
+
+## 📝 Scripts Disponíveis
+
+- `npm run dev` - Executa em modo desenvolvimento
+- `npm run build` - Gera build de produção
+- `npm run start` - Executa build de produção
+- `npm run lint` - Executa ESLint
+
+## 🔧 Configurações Adicionais
+
+### Google Analytics
+1. Crie uma conta no Google Analytics
+2. Obtenha o ID de rastreamento (G-XXXXXXXXXX)
+3. Configure no arquivo `.env.local`
+
+### Domínio Personalizado
+1. Configure o domínio no seu provedor de DNS
+2. Atualize `NEXT_PUBLIC_SITE_URL` no `.env.local`
+3. Configure no Google Analytics
+
+## 📞 Suporte
+
+Para dúvidas ou suporte, entre em contato:
+- Email: contato@simpli-digital.com
+- Telefone: +55 (11) 99999-9999
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.

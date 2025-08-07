@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "consulting": "Consulting",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Simplí Digital Innovation",
+    "subtitle": "Consulting and development for digital transformation",
+    "cta": "Learn More"
+  },
+  "footer": {
+    "copyright": "© 2024 Simplí Digital Innovation. All rights reserved."
+  }
+} 
