@@ -24,7 +24,7 @@ const SEO = ({
   noIndex = false,
   breadcrumbs = []
 }: SEOProps) => {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://simpli-digital.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.simplidigital.dev';
   const fullUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 
@@ -46,7 +46,7 @@ const SEO = ({
       '@type': 'ContactPoint',
       telephone: '+55-81-99194-2628',
       contactType: 'customer service',
-      email: 'contato@simpli-digital.com'
+      email: 'contato@simplidigital.dev'
     },
     sameAs: [
       'https://linkedin.com/company/simpli-digital',

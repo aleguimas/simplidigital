@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  trailingSlash: false,
   experimental: {
     optimizeCss: false, // Desabilitando temporariamente
   },
@@ -35,6 +36,16 @@ const nextConfig: NextConfig = {
             value: 'origin-when-cross-origin',
           },
         ],
+      },
+    ];
+  },
+  // Redirecionamentos para garantir o domínio correto
+  async redirects() {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: 'https://www.simplidigital.dev/sitemap.xml',
+        permanent: true,
       },
     ];
   },

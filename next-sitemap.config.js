@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://simpli-digital.com',
+  siteUrl: process.env.SITE_URL || 'https://www.simplidigital.dev',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   robotsTxtOptions: {
@@ -12,7 +12,7 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://simpli-digital.com/sitemap.xml',
+      'https://www.simplidigital.dev/sitemap.xml',
     ],
   },
   exclude: ['/api/*', '/admin/*', '/_next/*'],

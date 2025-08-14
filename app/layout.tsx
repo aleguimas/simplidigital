@@ -29,20 +29,20 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://simpli-digital.com'),
+  metadataBase: new URL('https://www.simplidigital.dev'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://simpli-digital.com',
+    url: 'https://www.simplidigital.dev',
     siteName: 'Simplí Digital',
     title: 'Simplí Digital - Transformação Digital e Inovação',
     description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
     images: [
       {
-        url: 'https://simpli-digital.com/images/og-image.jpg',
+        url: 'https://www.simplidigital.dev/images/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Simplí Digital - Transformação Digital',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Simplí Digital - Transformação Digital e Inovação',
     description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
-    images: ['https://simpli-digital.com/images/og-image.jpg'],
+    images: ['https://www.simplidigital.dev/images/og-image.jpg'],
     creator: '@simplidigital',
     site: '@simplidigital',
   },
@@ -108,8 +108,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'Simplí Digital',
-              url: 'https://simpli-digital.com',
-              logo: 'https://simpli-digital.com/images/logo-simpli-digital.webp',
+              url: 'https://www.simplidigital.dev',
+              logo: 'https://www.simplidigital.dev/images/logo-simpli-digital.webp',
               description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
               address: {
                 '@type': 'PostalAddress',
@@ -121,7 +121,7 @@ export default function RootLayout({
                 '@type': 'ContactPoint',
                 telephone: '+55-81-99194-2628',
                 contactType: 'customer service',
-                email: 'contato@simpli-digital.com'
+                email: 'contato@simplidigital.dev'
               },
               sameAs: [
                 'https://linkedin.com/company/simpli-digital',
