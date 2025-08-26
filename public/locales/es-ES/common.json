@@ -195,24 +195,24 @@
         },
         "caseStudy": {
           "title": "Caso de Éxito",
-          "subtitle": "Ve cómo transformamos el sitio web de TechCorp",
-          "title2": "TechCorp - Transformación Digital",
-          "description": "TechCorp necesitaba un sitio web moderno y responsivo que reflejara su posición como líder en tecnología. Desarrollamos una solución completa que incluyó:",
+          "subtitle": "Ve cómo transformamos el sitio web de Marta Amália Estética",
+          "title2": "Marta Amália Estética - Transformación Digital",
+          "description": "Marta Amália Estética necesitaba un sitio web moderno y responsivo que reflejara la calidad y profesionalismo de sus servicios. Desarrollamos una solución completa que incluyó:",
           "features": [
             "Sitio web responsivo con diseño moderno",
             "Optimización completa para SEO",
-            "Integración con CRM y analytics"
+            "Página de aterrizaje optimizada para conversiones"
           ],
-          "testimonial": "Simplí Digital transformó completamente nuestra presencia en línea. El nuevo sitio web aumentó nuestras conversiones en 150% y mejoró significativamente nuestra visibilidad en Google.",
-          "author": "Maria Silva, CEO de TechCorp",
+          "testimonial": "Simplí Digital transformó completamente nuestra presencia en línea. El nuevo sitio web www.martaamaliaestetica.com.br aumentó significativamente nuestro tráfico orgánico y conversiones. Ahora nuestros clientes encuentran fácilmente nuestros servicios y conseguimos más citas.",
+          "author": "Marta Amália, Esteticista",
           "results": {
             "title": "Resultados",
             "conversions": {
-              "value": "150%",
+              "value": "200%",
               "label": "Aumento en conversiones"
             },
             "traffic": {
-              "value": "3x",
+              "value": "4x",
               "label": "Más tráfico orgánico"
             }
           }
