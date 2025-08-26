@@ -1,12 +1,15 @@
 'use client';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import ContactPage from '@/components/ContactPage';
+import '../../lib/i18n';
 
 export default function AgentesIA() {
+  const { t } = useTranslation('common');
   const handleScrollToContact = () => {
     window.location.href = '/contato';
   };
@@ -92,16 +95,16 @@ export default function AgentesIA() {
         <section className="bg-gradient-simpli text-white py-20 lg:py-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Agentes de IA
+              {t('pages.serviceDetails.aiAgents.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8">
-              Automatize processos e aumente a eficiência do seu negócio com Inteligência Artificial personalizada.
+              {t('pages.serviceDetails.aiAgents.hero.subtitle')}
             </p>
             <button
               onClick={handleScrollToContact}
               className="bg-white text-simpli-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105"
             >
-              Solicitar Orçamento
+              {t('pages.serviceDetails.aiAgents.hero.cta')}
             </button>
           </div>
         </section>
