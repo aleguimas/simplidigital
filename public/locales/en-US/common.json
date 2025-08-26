@@ -82,5 +82,138 @@
   },
   "whatsapp": {
     "tooltip": "Chat with us on WhatsApp"
+  },
+  "pages": {
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Complete digital transformation solutions to boost your business",
+      "cta": "Request Quote",
+      "description": "We offer a complete range of digital services to help your company grow and stand out in the market."
+    },
+    "about": {
+      "title": "About Simplí Digital",
+      "subtitle": "Transforming companies through digital innovation",
+      "description": "We are a company specialized in digital transformation, focused on creating innovative solutions that boost our clients' growth.",
+      "mission": {
+        "title": "Our Mission",
+        "description": "Transform companies through digital innovation, providing technological solutions that optimize processes and drive sustainable growth."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be a reference in digital transformation, recognized for excellence and innovation in all our solutions."
+      },
+      "values": {
+        "title": "Our Values",
+        "innovation": "Innovation",
+        "excellence": "Excellence",
+        "partnership": "Partnership",
+        "results": "Results"
+      }
+    },
+    "consulting": {
+      "title": "Consulting",
+      "subtitle": "Strategy and digital transformation for your company",
+      "description": "We offer specialized consulting to help your company navigate digital transformation and achieve exceptional results.",
+      "services": {
+        "strategy": {
+          "title": "Digital Strategy",
+          "description": "We develop personalized strategies for your company to stand out in the digital world."
+        },
+        "transformation": {
+          "title": "Digital Transformation",
+          "description": "We accompany your company throughout the digital transformation process."
+        },
+        "optimization": {
+          "title": "Process Optimization",
+          "description": "We identify and optimize processes to increase your company's efficiency."
+        }
+      }
+    },
+    "serviceDetails": {
+      "webDevelopment": {
+        "title": "Web Development",
+        "subtitle": "Modern and responsive websites and web applications",
+        "description": "We create customized web solutions that boost your digital presence and convert visitors into customers.",
+        "features": [
+          "Responsive and modern websites",
+          "Custom web applications",
+          "Complete e-commerce",
+          "SEO optimization",
+          "System integration",
+          "Maintenance and support"
+        ],
+        "technologies": [
+          "React/Next.js",
+          "Node.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "PostgreSQL/MongoDB",
+          "AWS/Vercel"
+        ]
+      },
+      "aiAgents": {
+        "title": "AI Agents",
+        "subtitle": "Intelligent automation for your business",
+        "description": "We develop customized Artificial Intelligence agents that automate processes and increase your company's efficiency.",
+        "features": [
+          "Intelligent chatbots",
+          "Process automation",
+          "Advanced data analysis",
+          "API integration",
+          "Machine Learning",
+          "Natural language processing"
+        ],
+        "technologies": [
+          "Python",
+          "TensorFlow/PyTorch",
+          "OpenAI API",
+          "LangChain",
+          "FastAPI",
+          "Docker"
+        ]
+      },
+      "paidTraffic": {
+        "title": "Paid Traffic",
+        "subtitle": "Digital marketing campaigns that convert",
+        "description": "We manage digital marketing campaigns to maximize your ROI and attract qualified leads for your company.",
+        "features": [
+          "Google Ads",
+          "Facebook Ads",
+          "Instagram Ads",
+          "LinkedIn Ads",
+          "Remarketing",
+          "Performance analysis"
+        ],
+        "technologies": [
+          "Google Ads API",
+          "Facebook Business",
+          "Google Analytics",
+          "Google Tag Manager",
+          "Hotjar",
+          "Data Studio"
+        ]
+      },
+      "digitalConsulting": {
+        "title": "Digital Consulting",
+        "subtitle": "Complete digital transformation strategy",
+        "description": "We advise companies on digital transformation, from strategy to implementation of technological solutions.",
+        "features": [
+          "Market analysis",
+          "Digital strategy",
+          "Technology roadmap",
+          "Process transformation",
+          "Team training",
+          "Continuous monitoring"
+        ],
+        "methodologies": [
+          "Design Thinking",
+          "Agile/Scrum",
+          "Lean Startup",
+          "Customer Development",
+          "Growth Hacking",
+          "Data-Driven"
+        ]
+      }
+    }
   }
 } 

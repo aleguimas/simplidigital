@@ -2,9 +2,12 @@
 
 import { useRef } from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { BiCodeBlock, BiBrain, BiBarChart, BiShowAlt } from 'react-icons/bi';
+import '../lib/i18n';
 
 const ServicesPage = () => {
+  const { t } = useTranslation('common');
   const contactRef = useRef<HTMLDivElement>(null);
 
   const scrollToContact = () => {
@@ -13,32 +16,32 @@ const ServicesPage = () => {
 
   const services = [
     {
-      title: 'Desenvolvimento Web',
-      description: 'Criamos sites e aplicações web modernas, responsivas e otimizadas para SEO.',
+      title: t('services.webDevelopment.title'),
+      description: t('services.webDevelopment.description'),
       icon: BiCodeBlock,
       href: '/servicos/desenvolvimento-web',
       iconBg: 'bg-gradient-to-br from-blue-400 to-indigo-500',
       features: ['Sites responsivos', 'Aplicações web', 'E-commerce', 'Sistemas personalizados']
     },
     {
-      title: 'Agentes de IA',
-      description: 'Desenvolvemos chatbots inteligentes e automações que revolucionam o atendimento.',
+      title: t('services.aiAgents.title'),
+      description: t('services.aiAgents.description'),
       icon: BiBrain,
       href: '/servicos/agentes-ia',
       iconBg: 'bg-gradient-to-br from-purple-400 to-pink-500',
       features: ['Chatbots inteligentes', 'Automação de processos', 'Análise de dados', 'Integração com APIs']
     },
     {
-      title: 'Tráfego Pago',
-      description: 'Gerenciamos campanhas de marketing digital para maximizar seu ROI.',
+      title: t('services.paidTraffic.title'),
+      description: t('services.paidTraffic.description'),
       icon: BiBarChart,
       href: '/servicos/trafego-pago',
       iconBg: 'bg-gradient-to-br from-green-400 to-emerald-500',
       features: ['Google Ads', 'Facebook Ads', 'Instagram Ads', 'Remarketing']
     },
     {
-      title: 'Consultoria Digital',
-      description: 'Estratégia completa de transformação digital para sua empresa.',
+      title: t('services.digitalConsulting.title'),
+      description: t('services.digitalConsulting.description'),
       icon: BiShowAlt,
       href: '/servicos/consultoria-digital',
       iconBg: 'bg-gradient-to-br from-orange-400 to-red-500',
@@ -53,16 +56,16 @@ const ServicesPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Nossos <span className="text-simpli-teal">Serviços</span>
+              {t('pages.services.title')} <span className="text-simpli-teal">{t('nav.services')}</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Soluções completas em transformação digital para impulsionar seu negócio
+              {t('pages.services.subtitle')}
             </p>
             <button
               onClick={scrollToContact}
               className="bg-gradient-simpli text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
-              Solicitar Orçamento
+              {t('pages.services.cta')}
             </button>
           </div>
         </div>

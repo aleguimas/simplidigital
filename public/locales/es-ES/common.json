@@ -82,5 +82,138 @@
   },
   "whatsapp": {
     "tooltip": "Chatea con nosotros en WhatsApp"
+  },
+  "pages": {
+    "services": {
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones completas en transformación digital para impulsar tu negocio",
+      "cta": "Solicitar Cotización",
+      "description": "Ofrecemos una gama completa de servicios digitales para ayudar a tu empresa a crecer y destacarse en el mercado."
+    },
+    "about": {
+      "title": "Acerca de Simplí Digital",
+      "subtitle": "Transformando empresas a través de la innovación digital",
+      "description": "Somos una empresa especializada en transformación digital, enfocada en crear soluciones innovadoras que impulsan el crecimiento de nuestros clientes.",
+      "mission": {
+        "title": "Nuestra Misión",
+        "description": "Transformar empresas a través de la innovación digital, proporcionando soluciones tecnológicas que optimizan procesos e impulsan el crecimiento sostenible."
+      },
+      "vision": {
+        "title": "Nuestra Visión",
+        "description": "Ser referencia en transformación digital, reconocida por la excelencia e innovación en todas nuestras soluciones."
+      },
+      "values": {
+        "title": "Nuestros Valores",
+        "innovation": "Innovación",
+        "excellence": "Excelencia",
+        "partnership": "Asociación",
+        "results": "Resultados"
+      }
+    },
+    "consulting": {
+      "title": "Consultorías",
+      "subtitle": "Estrategia y transformación digital para tu empresa",
+      "description": "Ofrecemos consultoría especializada para ayudar a tu empresa a navegar por la transformación digital y alcanzar resultados excepcionales.",
+      "services": {
+        "strategy": {
+          "title": "Estrategia Digital",
+          "description": "Desarrollamos estrategias personalizadas para que tu empresa se destaque en el mundo digital."
+        },
+        "transformation": {
+          "title": "Transformación Digital",
+          "description": "Acompañamos a tu empresa en todo el proceso de transformación digital."
+        },
+        "optimization": {
+          "title": "Optimización de Procesos",
+          "description": "Identificamos y optimizamos procesos para aumentar la eficiencia de tu empresa."
+        }
+      }
+    },
+    "serviceDetails": {
+      "webDevelopment": {
+        "title": "Desarrollo Web",
+        "subtitle": "Sitios web y aplicaciones web modernas y responsivas",
+        "description": "Creamos soluciones web personalizadas que impulsan tu presencia digital y convierten visitantes en clientes.",
+        "features": [
+          "Sitios web responsivos y modernos",
+          "Aplicaciones web personalizadas",
+          "E-commerce completo",
+          "Optimización para SEO",
+          "Integración con sistemas",
+          "Mantenimiento y soporte"
+        ],
+        "technologies": [
+          "React/Next.js",
+          "Node.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "PostgreSQL/MongoDB",
+          "AWS/Vercel"
+        ]
+      },
+      "aiAgents": {
+        "title": "Agentes de IA",
+        "subtitle": "Automatización inteligente para tu negocio",
+        "description": "Desarrollamos agentes de Inteligencia Artificial personalizados que automatizan procesos y aumentan la eficiencia de tu empresa.",
+        "features": [
+          "Chatbots inteligentes",
+          "Automatización de procesos",
+          "Análisis de datos avanzado",
+          "Integración con APIs",
+          "Machine Learning",
+          "Procesamiento de lenguaje natural"
+        ],
+        "technologies": [
+          "Python",
+          "TensorFlow/PyTorch",
+          "OpenAI API",
+          "LangChain",
+          "FastAPI",
+          "Docker"
+        ]
+      },
+      "paidTraffic": {
+        "title": "Tráfico Pagado",
+        "subtitle": "Campañas de marketing digital que convierten",
+        "description": "Gestionamos campañas de marketing digital para maximizar tu ROI y atraer leads calificados para tu empresa.",
+        "features": [
+          "Google Ads",
+          "Facebook Ads",
+          "Instagram Ads",
+          "LinkedIn Ads",
+          "Remarketing",
+          "Análisis de rendimiento"
+        ],
+        "technologies": [
+          "Google Ads API",
+          "Facebook Business",
+          "Google Analytics",
+          "Google Tag Manager",
+          "Hotjar",
+          "Data Studio"
+        ]
+      },
+      "digitalConsulting": {
+        "title": "Consultoría Digital",
+        "subtitle": "Estrategia completa de transformación digital",
+        "description": "Asesoramos empresas en transformación digital, desde la estrategia hasta la implementación de soluciones tecnológicas.",
+        "features": [
+          "Análisis de mercado",
+          "Estrategia digital",
+          "Roadmap tecnológico",
+          "Transformación de procesos",
+          "Capacitación de equipos",
+          "Seguimiento continuo"
+        ],
+        "methodologies": [
+          "Design Thinking",
+          "Agile/Scrum",
+          "Lean Startup",
+          "Customer Development",
+          "Growth Hacking",
+          "Data-Driven"
+        ]
+      }
+    }
   }
 } 

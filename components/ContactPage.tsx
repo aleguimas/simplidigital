@@ -1,8 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import '../lib/i18n';
 
 const ContactPage = () => {
+  const { t } = useTranslation('common');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -124,10 +127,10 @@ const ContactPage = () => {
       <section className="bg-gradient-simpli text-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Entre em Contato
+            {t('contact.title')}
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Pronto para transformar seu negócio? Vamos conversar sobre como podemos ajudar.
+            {t('contact.description')}
           </p>
         </div>
       </section>
