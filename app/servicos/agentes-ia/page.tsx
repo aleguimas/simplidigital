@@ -21,8 +21,8 @@ export default function AgentesIA() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      title: 'Automação Inteligente',
-      description: 'Automatize processos complexos com IA avançada'
+      title: t('pages.serviceDetails.aiAgents.benefits.automation.title'),
+      description: t('pages.serviceDetails.aiAgents.benefits.automation.description')
     },
     {
       icon: (
@@ -30,8 +30,8 @@ export default function AgentesIA() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      title: 'Análise de Dados',
-      description: 'Insights valiosos baseados em dados reais'
+      title: t('pages.serviceDetails.aiAgents.benefits.insights.title'),
+      description: t('pages.serviceDetails.aiAgents.benefits.insights.description')
     },
     {
       icon: (
@@ -39,8 +39,8 @@ export default function AgentesIA() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
         </svg>
       ),
-      title: 'Redução de Custos',
-      description: 'Economize recursos com automação inteligente'
+      title: t('pages.serviceDetails.aiAgents.benefits.availability.title'),
+      description: t('pages.serviceDetails.aiAgents.benefits.availability.description')
     },
     {
       icon: (
@@ -48,31 +48,31 @@ export default function AgentesIA() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
         </svg>
       ),
-      title: 'Escalabilidade',
-      description: 'Cresça sem aumentar proporcionalmente os custos'
+      title: t('pages.serviceDetails.aiAgents.benefits.scalability.title'),
+      description: t('pages.serviceDetails.aiAgents.benefits.scalability.description')
     }
   ];
 
   const process = [
     {
-      step: '01',
-      title: 'Análise de Necessidades',
-      description: 'Identificamos processos que podem ser automatizados'
+      step: t('pages.serviceDetails.aiAgents.process.analysis.step'),
+      title: t('pages.serviceDetails.aiAgents.process.analysis.title'),
+      description: t('pages.serviceDetails.aiAgents.process.analysis.description')
     },
     {
-      step: '02',
-      title: 'Design do Agente',
-      description: 'Criamos a arquitetura e funcionalidades do agente'
+      step: t('pages.serviceDetails.aiAgents.process.design.step'),
+      title: t('pages.serviceDetails.aiAgents.process.design.title'),
+      description: t('pages.serviceDetails.aiAgents.process.design.description')
     },
     {
-      step: '03',
-      title: 'Desenvolvimento & Treinamento',
-      description: 'Desenvolvemos e treinamos o agente com dados reais'
+      step: t('pages.serviceDetails.aiAgents.process.development.step'),
+      title: t('pages.serviceDetails.aiAgents.process.development.title'),
+      description: t('pages.serviceDetails.aiAgents.process.development.description')
     },
     {
-      step: '04',
-      title: 'Implementação & Monitoramento',
-      description: 'Deploy e acompanhamento contínuo de performance'
+      step: t('pages.serviceDetails.aiAgents.process.deployment.step'),
+      title: t('pages.serviceDetails.aiAgents.process.deployment.title'),
+      description: t('pages.serviceDetails.aiAgents.process.deployment.description')
     }
   ];
 
@@ -115,20 +115,16 @@ export default function AgentesIA() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  O que são Agentes de IA?
+                  {t('pages.serviceDetails.aiAgents.whatIs.title')}
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Agentes de Inteligência Artificial são sistemas autônomos que podem perceber seu ambiente, 
-                  tomar decisões e executar ações para alcançar objetivos específicos. Eles combinam 
-                  machine learning, processamento de linguagem natural e automação para resolver problemas complexos.
+                  {t('pages.serviceDetails.aiAgents.whatIs.description1')}
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
-                  Nossos agentes de IA são desenvolvidos sob medida para as necessidades específicas do seu negócio, 
-                  podendo automatizar desde atendimento ao cliente até análise de dados e tomada de decisões estratégicas.
+                  {t('pages.serviceDetails.aiAgents.whatIs.description2')}
                 </p>
                 <p className="text-lg text-gray-600">
-                  Utilizamos as tecnologias mais avançadas do mercado, incluindo GPT, Claude, e modelos customizados, 
-                  para criar agentes inteligentes que realmente agregam valor ao seu negócio.
+                  {t('pages.serviceDetails.aiAgents.whatIs.description3')}
                 </p>
               </div>
               <div className="bg-gray-50 rounded-lg p-8">
@@ -139,10 +135,10 @@ export default function AgentesIA() {
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    IA de Última Geração
+                    {t('pages.serviceDetails.aiAgents.whatIs.technologies.title')}
                   </h3>
                   <p className="text-gray-600">
-                    GPT-4, Claude, modelos customizados e muito mais para criar agentes realmente inteligentes.
+                    {t('pages.serviceDetails.aiAgents.whatIs.technologies.description')}
                   </p>
                 </div>
               </div>
@@ -155,10 +151,10 @@ export default function AgentesIA() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Benefícios dos Agentes de IA
+                {t('pages.serviceDetails.aiAgents.benefits.title')}
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Por que implementar agentes de IA no seu negócio?
+                {t('pages.serviceDetails.aiAgents.benefits.subtitle')}
               </p>
             </div>
 
@@ -183,10 +179,10 @@ export default function AgentesIA() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Como Fazemos
+                {t('pages.serviceDetails.aiAgents.process.title')}
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Nosso processo de desenvolvimento de agentes de IA em 4 etapas
+                {t('pages.serviceDetails.aiAgents.process.subtitle')}
               </p>
             </div>
 
@@ -209,10 +205,10 @@ export default function AgentesIA() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Case de Sucesso
+                {t('pages.serviceDetails.aiAgents.caseStudy.title')}
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Veja como criamos um agente de IA para a FinTech Solutions
+                {t('pages.serviceDetails.aiAgents.caseStudy.subtitle')}
               </p>
             </div>
 
@@ -220,39 +216,26 @@ export default function AgentesIA() {
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="p-8 lg:p-12">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    FinTech Solutions - Agente de Atendimento
+                    {t('pages.serviceDetails.aiAgents.caseStudy.title2')}
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    A FinTech Solutions precisava automatizar o atendimento ao cliente 24/7. 
-                    Desenvolvemos um agente de IA que:
+                    {t('pages.serviceDetails.aiAgents.caseStudy.description')}
                   </p>
                   <ul className="space-y-2 mb-6">
-                    <li className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 text-simpli-green mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Atende 80% das consultas automaticamente
-                    </li>
-                    <li className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 text-simpli-green mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Reduz tempo de resposta de 2h para 30s
-                    </li>
-                    <li className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 text-simpli-green mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Integração com sistemas existentes
-                    </li>
+                    {t('pages.serviceDetails.aiAgents.caseStudy.features', { returnObjects: true }).map((feature: string, index: number) => (
+                      <li key={index} className="flex items-center text-gray-600">
+                        <svg className="w-4 h-4 text-simpli-green mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
                   </ul>
                                          <div className="bg-gray-50 p-4 rounded-lg">
                          <p className="text-gray-700 italic">
-                           &ldquo;O agente de IA da Simplí Digital revolucionou nosso atendimento. 
-                           Conseguimos reduzir custos em 60% e aumentar a satisfação dos clientes 
-                           em 40%. É como ter uma equipe de atendimento trabalhando 24/7.&rdquo;
+                           &ldquo;{t('pages.serviceDetails.aiAgents.caseStudy.testimonial')}&rdquo;
                          </p>
-                         <p className="text-sm text-gray-600 mt-2">- João Santos, CTO da FinTech Solutions</p>
+                         <p className="text-sm text-gray-600 mt-2">- {t('pages.serviceDetails.aiAgents.caseStudy.author')}</p>
                        </div>
                 </div>
                 <div className="bg-gradient-to-br from-simpli-green/20 to-simpli-teal/20 flex items-center justify-center p-8">
@@ -262,15 +245,15 @@ export default function AgentesIA() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                       </svg>
                     </div>
-                    <h4 className="text-xl font-semibold text-gray-900 mb-2">Resultados</h4>
+                    <h4 className="text-xl font-semibold text-gray-900 mb-2">{t('pages.serviceDetails.aiAgents.caseStudy.results.title')}</h4>
                     <div className="grid grid-cols-2 gap-4 text-center">
                       <div>
-                        <div className="text-2xl font-bold text-simpli-green">60%</div>
-                        <div className="text-sm text-gray-600">Redução de custos</div>
+                        <div className="text-2xl font-bold text-simpli-green">{t('pages.serviceDetails.aiAgents.caseStudy.results.response.value')}</div>
+                        <div className="text-sm text-gray-600">{t('pages.serviceDetails.aiAgents.caseStudy.results.response.label')}</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-simpli-teal">40%</div>
-                        <div className="text-sm text-gray-600">Mais satisfação</div>
+                        <div className="text-2xl font-bold text-simpli-teal">{t('pages.serviceDetails.aiAgents.caseStudy.results.satisfaction.value')}</div>
+                        <div className="text-sm text-gray-600">{t('pages.serviceDetails.aiAgents.caseStudy.results.satisfaction.label')}</div>
                       </div>
                     </div>
                   </div>
