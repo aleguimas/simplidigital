@@ -1,6 +1,5 @@
 'use client';
 
-import { useRef } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { BiCodeBlock, BiBrain, BiBarChart, BiShowAlt } from 'react-icons/bi';

@@ -1,6 +1,5 @@
 'use client';
 
-import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
