@@ -18,20 +18,12 @@ export default function TrafegoPago() {
     {
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      title: 'ROI Otimizado',
-      description: 'Maximizamos o retorno sobre investimento das suas campanhas'
-    },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      ),
-      title: 'Leads Qualificados',
-      description: 'Atraímos público-alvo específico e interessado'
+      title: t('pages.serviceDetails.paidTraffic.benefits.targeting.title'),
+      description: t('pages.serviceDetails.paidTraffic.benefits.targeting.description')
     },
     {
       icon: (
@@ -39,40 +31,49 @@ export default function TrafegoPago() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      title: 'Resultados Rápidos',
-      description: 'Veja resultados em tempo real e ajuste estratégias'
+      title: t('pages.serviceDetails.paidTraffic.benefits.measurable.title'),
+      description: t('pages.serviceDetails.paidTraffic.benefits.measurable.description')
     },
     {
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
         </svg>
       ),
-      title: 'Escalabilidade',
-      description: 'Aumente ou diminua investimentos conforme resultados'
+      title: t('pages.serviceDetails.paidTraffic.benefits.scalable.title'),
+      description: t('pages.serviceDetails.paidTraffic.benefits.scalable.description')
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      ),
+      title: t('pages.serviceDetails.paidTraffic.benefits.fast.title'),
+      description: t('pages.serviceDetails.paidTraffic.benefits.fast.description')
     }
   ];
 
   const process = [
     {
-      step: '01',
-      title: 'Análise de Mercado',
-      description: 'Estudamos seu público-alvo e concorrência'
+      step: t('pages.serviceDetails.paidTraffic.process.research.step'),
+      title: t('pages.serviceDetails.paidTraffic.process.research.title'),
+      description: t('pages.serviceDetails.paidTraffic.process.research.description')
     },
     {
-      step: '02',
-      title: 'Estratégia de Campanha',
-      description: 'Definimos canais, orçamentos e objetivos'
+      step: t('pages.serviceDetails.paidTraffic.process.strategy.step'),
+      title: t('pages.serviceDetails.paidTraffic.process.strategy.title'),
+      description: t('pages.serviceDetails.paidTraffic.process.strategy.description')
     },
     {
-      step: '03',
-      title: 'Criação & Otimização',
-      description: 'Criamos anúncios e otimizamos performance'
+      step: t('pages.serviceDetails.paidTraffic.process.execution.step'),
+      title: t('pages.serviceDetails.paidTraffic.process.execution.title'),
+      description: t('pages.serviceDetails.paidTraffic.process.execution.description')
     },
     {
-      step: '04',
-      title: 'Monitoramento & Ajustes',
-      description: 'Acompanhamos resultados e fazemos ajustes'
+      step: t('pages.serviceDetails.paidTraffic.process.optimization.step'),
+      title: t('pages.serviceDetails.paidTraffic.process.optimization.title'),
+      description: t('pages.serviceDetails.paidTraffic.process.optimization.description')
     }
   ];
 
@@ -80,7 +81,7 @@ export default function TrafegoPago() {
     <>
       <SEO
         title="Tráfego Pago | Simplí Digital"
-        description="Gerenciamos campanhas em Google Ads, Facebook Ads e LinkedIn Ads, maximizando ROI e atraindo leads qualificados."
+        description="Gerenciamos campanhas de marketing digital para maximizar seu ROI e atrair leads qualificados para sua empresa."
         canonical="/servicos/trafego-pago"
         ogImage="/images/trafego-pago-hero.jpg"
         breadcrumbs={[
@@ -115,21 +116,16 @@ export default function TrafegoPago() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  O que é Tráfego Pago?
+                  {t('pages.serviceDetails.paidTraffic.whatIs.title')}
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Tráfego pago é uma estratégia de marketing digital onde você paga para exibir seus anúncios 
-                  em plataformas como Google, Facebook, Instagram e LinkedIn. É uma forma eficiente de 
-                  alcançar seu público-alvo de forma direcionada e mensurável.
+                  {t('pages.serviceDetails.paidTraffic.whatIs.description1')}
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
-                  Diferente do tráfego orgânico, o tráfego pago oferece controle total sobre quem vê seus anúncios, 
-                  quando eles aparecem e quanto você gasta. Isso permite otimizações constantes para maximizar 
-                  o retorno sobre investimento.
+                  {t('pages.serviceDetails.paidTraffic.whatIs.description2')}
                 </p>
                 <p className="text-lg text-gray-600">
-                  Nossa equipe especializada gerencia campanhas em todas as principais plataformas, 
-                  garantindo que cada real investido gere o máximo de valor para seu negócio.
+                  {t('pages.serviceDetails.paidTraffic.whatIs.description3')}
                 </p>
               </div>
               <div className="bg-gray-50 rounded-lg p-8">
@@ -140,10 +136,10 @@ export default function TrafegoPago() {
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Plataformas Principais
+                    {t('pages.serviceDetails.paidTraffic.whatIs.technologies.title')}
                   </h3>
                   <p className="text-gray-600">
-                    Google Ads, Facebook Ads, Instagram Ads, LinkedIn Ads e muito mais.
+                    {t('pages.serviceDetails.paidTraffic.whatIs.technologies.description')}
                   </p>
                 </div>
               </div>
@@ -156,10 +152,10 @@ export default function TrafegoPago() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Benefícios do Tráfego Pago
+                {t('pages.serviceDetails.paidTraffic.benefits.title')}
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Por que investir em tráfego pago para seu negócio?
+                {t('pages.serviceDetails.paidTraffic.benefits.subtitle')}
               </p>
             </div>
 
@@ -184,10 +180,10 @@ export default function TrafegoPago() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Como Fazemos
+                {t('pages.serviceDetails.paidTraffic.process.title')}
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Nosso processo de gestão de tráfego pago em 4 etapas
+                {t('pages.serviceDetails.paidTraffic.process.subtitle')}
               </p>
             </div>
 
@@ -210,10 +206,10 @@ export default function TrafegoPago() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Case de Sucesso
+                {t('pages.serviceDetails.paidTraffic.caseStudy.title')}
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Veja como otimizamos as campanhas da E-commerce Plus
+                {t('pages.serviceDetails.paidTraffic.caseStudy.subtitle')}
               </p>
             </div>
 
@@ -221,40 +217,27 @@ export default function TrafegoPago() {
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="p-8 lg:p-12">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    E-commerce Plus - Campanhas Google Ads
+                    {t('pages.serviceDetails.paidTraffic.caseStudy.title2')}
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    A E-commerce Plus precisava aumentar suas vendas online. Implementamos uma estratégia 
-                    completa de tráfego pago que incluiu:
+                    {t('pages.serviceDetails.paidTraffic.caseStudy.description')}
                   </p>
                   <ul className="space-y-2 mb-6">
-                    <li className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 text-simpli-green mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Campanhas de pesquisa e display no Google Ads
-                    </li>
-                    <li className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 text-simpli-green mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Remarketing no Facebook e Instagram
-                    </li>
-                    <li className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 text-simpli-green mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Otimização contínua baseada em dados
-                    </li>
+                    {t('pages.serviceDetails.paidTraffic.caseStudy.features', { returnObjects: true }).map((feature: string, index: number) => (
+                      <li key={index} className="flex items-center text-gray-600">
+                        <svg className="w-4 h-4 text-simpli-green mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
                   </ul>
-                                         <div className="bg-gray-50 p-4 rounded-lg">
-                         <p className="text-gray-700 italic">
-                           &ldquo;A Simplí Digital transformou completamente nossas campanhas de tráfego pago. 
-                           Conseguimos aumentar nossas vendas em 200% e reduzir o custo por aquisição em 40%. 
-                           O ROI das campanhas nunca foi tão alto.&rdquo;
-                         </p>
-                         <p className="text-sm text-gray-600 mt-2">- Ana Costa, Marketing Manager da E-commerce Plus</p>
-                       </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-gray-700 italic">
+                      &ldquo;{t('pages.serviceDetails.paidTraffic.caseStudy.testimonial')}&rdquo;
+                    </p>
+                    <p className="text-sm text-gray-600 mt-2">- {t('pages.serviceDetails.paidTraffic.caseStudy.author')}</p>
+                  </div>
                 </div>
                 <div className="bg-gradient-to-br from-simpli-green/20 to-simpli-teal/20 flex items-center justify-center p-8">
                   <div className="text-center">
@@ -263,15 +246,15 @@ export default function TrafegoPago() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                       </svg>
                     </div>
-                    <h4 className="text-xl font-semibold text-gray-900 mb-2">Resultados</h4>
+                    <h4 className="text-xl font-semibold text-gray-900 mb-2">{t('pages.serviceDetails.paidTraffic.caseStudy.results.title')}</h4>
                     <div className="grid grid-cols-2 gap-4 text-center">
                       <div>
-                        <div className="text-2xl font-bold text-simpli-green">200%</div>
-                        <div className="text-sm text-gray-600">Aumento em vendas</div>
+                        <div className="text-2xl font-bold text-simpli-green">{t('pages.serviceDetails.paidTraffic.caseStudy.results.sales.value')}</div>
+                        <div className="text-sm text-gray-600">{t('pages.serviceDetails.paidTraffic.caseStudy.results.sales.label')}</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-simpli-teal">40%</div>
-                        <div className="text-sm text-gray-600">Redução CPA</div>
+                        <div className="text-2xl font-bold text-simpli-teal">{t('pages.serviceDetails.paidTraffic.caseStudy.results.cpa.value')}</div>
+                        <div className="text-sm text-gray-600">{t('pages.serviceDetails.paidTraffic.caseStudy.results.cpa.label')}</div>
                       </div>
                     </div>
                   </div>
