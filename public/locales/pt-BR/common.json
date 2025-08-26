@@ -134,85 +134,373 @@
         "title": "Desenvolvimento Web",
         "subtitle": "Sites e aplicações web modernas e responsivas",
         "description": "Criamos soluções web personalizadas que impulsionam sua presença digital e convertem visitantes em clientes.",
-        "features": [
-          "Sites responsivos e modernos",
-          "Aplicações web personalizadas",
-          "E-commerce completo",
-          "Otimização para SEO",
-          "Integração com sistemas",
-          "Manutenção e suporte"
-        ],
-        "technologies": [
-          "React/Next.js",
-          "Node.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "PostgreSQL/MongoDB",
-          "AWS/Vercel"
-        ]
+        "hero": {
+          "title": "Desenvolvimento Web",
+          "subtitle": "Criamos sites e landing pages modernos e responsivos que convertem visitantes em clientes.",
+          "cta": "Solicitar Orçamento"
+        },
+        "whatIs": {
+          "title": "O que é Desenvolvimento Web?",
+          "description1": "O desenvolvimento web é o processo de criação de sites e aplicações web que funcionam na internet. Envolve desde a criação de sites institucionais até e-commerces complexos e aplicações web avançadas.",
+          "description2": "Utilizamos as tecnologias mais modernas do mercado, como React, Next.js, TypeScript e Node.js, para criar soluções que não apenas impressionam visualmente, mas também oferecem performance excepcional e experiência de usuário superior.",
+          "description3": "Nossa abordagem combina design criativo com desenvolvimento técnico robusto, garantindo que cada projeto seja único, funcional e alinhado com os objetivos de negócio dos nossos clientes.",
+          "technologies": {
+            "title": "Tecnologias Modernas",
+            "description": "React, Next.js, TypeScript, Node.js e muito mais para criar experiências web excepcionais."
+          }
+        },
+        "benefits": {
+          "title": "Benefícios do Desenvolvimento Web",
+          "subtitle": "Por que escolher nossos serviços de desenvolvimento web?",
+          "performance": {
+            "title": "Performance Otimizada",
+            "description": "Sites rápidos e responsivos que carregam em segundos"
+          },
+          "seo": {
+            "title": "SEO Avançado",
+            "description": "Otimização completa para motores de busca"
+          },
+          "responsive": {
+            "title": "Design Responsivo",
+            "description": "Funciona perfeitamente em todos os dispositivos"
+          },
+          "security": {
+            "title": "Segurança Garantida",
+            "description": "Proteção completa contra ameaças digitais"
+          }
+        },
+        "process": {
+          "title": "Como Fazemos",
+          "subtitle": "Nosso processo de desenvolvimento web em 4 etapas",
+          "discovery": {
+            "step": "01",
+            "title": "Discovery & Planning",
+            "description": "Análise profunda das necessidades e objetivos do projeto"
+          },
+          "design": {
+            "step": "02",
+            "title": "Design & Prototyping",
+            "description": "Criação de wireframes e protótipos interativos"
+          },
+          "development": {
+            "step": "03",
+            "title": "Development",
+            "description": "Desenvolvimento com as melhores tecnologias do mercado"
+          },
+          "testing": {
+            "step": "04",
+            "title": "Testing & Launch",
+            "description": "Testes rigorosos e lançamento otimizado"
+          }
+        },
+        "caseStudy": {
+          "title": "Case de Sucesso",
+          "subtitle": "Veja como transformamos o site da TechCorp",
+          "title2": "TechCorp - Transformação Digital",
+          "description": "A TechCorp precisava de um site moderno e responsivo que refletisse sua posição como líder em tecnologia. Desenvolvemos uma solução completa que incluiu:",
+          "features": [
+            "Site responsivo com design moderno",
+            "Otimização completa para SEO",
+            "Integração com CRM e analytics"
+          ],
+          "testimonial": "A Simplí Digital transformou completamente nossa presença online. O novo site aumentou nossas conversões em 150% e melhorou significativamente nossa visibilidade no Google.",
+          "author": "Maria Silva, CEO da TechCorp",
+          "results": {
+            "title": "Resultados",
+            "conversions": {
+              "value": "150%",
+              "label": "Aumento em conversões"
+            },
+            "traffic": {
+              "value": "3x",
+              "label": "Mais tráfego orgânico"
+            }
+          }
+        },
+        "cta": {
+          "title": "Pronto para Transformar seu Site?",
+          "description": "Entre em contato conosco e descubra como podemos criar um site que impulsiona seus resultados.",
+          "button": "Solicitar Orçamento"
+        }
       },
       "aiAgents": {
         "title": "Agentes de IA",
         "subtitle": "Automação inteligente para seu negócio",
         "description": "Desenvolvemos agentes de Inteligência Artificial personalizados que automatizam processos e aumentam a eficiência da sua empresa.",
-        "features": [
-          "Chatbots inteligentes",
-          "Automação de processos",
-          "Análise de dados avançada",
-          "Integração com APIs",
-          "Machine Learning",
-          "Processamento de linguagem natural"
-        ],
-        "technologies": [
-          "Python",
-          "TensorFlow/PyTorch",
-          "OpenAI API",
-          "LangChain",
-          "FastAPI",
-          "Docker"
-        ]
+        "hero": {
+          "title": "Agentes de IA",
+          "subtitle": "Desenvolvemos chatbots inteligentes e automações que revolucionam o atendimento.",
+          "cta": "Solicitar Orçamento"
+        },
+        "whatIs": {
+          "title": "O que são Agentes de IA?",
+          "description1": "Agentes de Inteligência Artificial são sistemas computacionais que podem perceber seu ambiente, tomar decisões e executar ações para alcançar objetivos específicos.",
+          "description2": "Nossos agentes de IA são desenvolvidos com as tecnologias mais avançadas, incluindo machine learning, processamento de linguagem natural e integração com APIs.",
+          "description3": "Eles podem automatizar tarefas repetitivas, melhorar o atendimento ao cliente, otimizar processos internos e fornecer insights valiosos para tomada de decisões.",
+          "technologies": {
+            "title": "Tecnologias Avançadas",
+            "description": "Machine Learning, NLP, APIs e muito mais para criar automações inteligentes."
+          }
+        },
+        "benefits": {
+          "title": "Benefícios dos Agentes de IA",
+          "subtitle": "Por que implementar agentes de IA no seu negócio?",
+          "automation": {
+            "title": "Automação Inteligente",
+            "description": "Reduz tarefas manuais e aumenta a eficiência operacional"
+          },
+          "scalability": {
+            "title": "Escalabilidade",
+            "description": "Cresce junto com seu negócio sem custos adicionais"
+          },
+          "insights": {
+            "title": "Insights Valiosos",
+            "description": "Análise de dados em tempo real para decisões estratégicas"
+          },
+          "availability": {
+            "title": "Disponibilidade 24/7",
+            "description": "Atendimento e operação ininterruptos"
+          }
+        },
+        "process": {
+          "title": "Como Desenvolvemos",
+          "subtitle": "Nosso processo de desenvolvimento de agentes de IA",
+          "analysis": {
+            "step": "01",
+            "title": "Análise de Processos",
+            "description": "Identificação de oportunidades de automação"
+          },
+          "design": {
+            "step": "02",
+            "title": "Design da Solução",
+            "description": "Arquitetura e fluxos de automação"
+          },
+          "development": {
+            "step": "03",
+            "title": "Desenvolvimento",
+            "description": "Implementação com tecnologias avançadas"
+          },
+          "deployment": {
+            "step": "04",
+            "title": "Deploy & Monitoramento",
+            "description": "Implementação e acompanhamento contínuo"
+          }
+        },
+        "caseStudy": {
+          "title": "Case de Sucesso",
+          "subtitle": "Veja como automatizamos o atendimento da E-commerce Plus",
+          "title2": "E-commerce Plus - Automação de Atendimento",
+          "description": "A E-commerce Plus precisava melhorar seu atendimento ao cliente e reduzir custos operacionais. Implementamos agentes de IA que incluíram:",
+          "features": [
+            "Chatbot inteligente para atendimento 24/7",
+            "Automação de processos de vendas",
+            "Análise de dados em tempo real"
+          ],
+          "testimonial": "Os agentes de IA da Simplí Digital revolucionaram nosso atendimento. Conseguimos reduzir o tempo de resposta em 80% e aumentar nossa satisfação do cliente.",
+          "author": "João Santos, CTO da E-commerce Plus",
+          "results": {
+            "title": "Resultados",
+            "response": {
+              "value": "80%",
+              "label": "Redução no tempo de resposta"
+            },
+            "satisfaction": {
+              "value": "95%",
+              "label": "Satisfação do cliente"
+            }
+          }
+        },
+        "cta": {
+          "title": "Pronto para Automatizar seu Negócio?",
+          "description": "Entre em contato conosco e descubra como a IA pode transformar seus processos.",
+          "button": "Solicitar Orçamento"
+        }
       },
       "paidTraffic": {
         "title": "Tráfego Pago",
         "subtitle": "Campanhas de marketing digital que convertem",
         "description": "Gerenciamos campanhas de marketing digital para maximizar seu ROI e atrair leads qualificados para sua empresa.",
-        "features": [
-          "Google Ads",
-          "Facebook Ads",
-          "Instagram Ads",
-          "LinkedIn Ads",
-          "Remarketing",
-          "Análise de performance"
-        ],
-        "technologies": [
-          "Google Ads API",
-          "Facebook Business",
-          "Google Analytics",
-          "Google Tag Manager",
-          "Hotjar",
-          "Data Studio"
-        ]
+        "hero": {
+          "title": "Tráfego Pago",
+          "subtitle": "Gerenciamos campanhas de marketing digital para maximizar seu ROI.",
+          "cta": "Solicitar Orçamento"
+        },
+        "whatIs": {
+          "title": "O que é Tráfego Pago?",
+          "description1": "Tráfego pago é uma estratégia de marketing digital que envolve pagar por anúncios em plataformas como Google Ads, Facebook Ads e LinkedIn Ads.",
+          "description2": "Nossas campanhas são estrategicamente planejadas para atingir o público certo, no momento certo, maximizando o retorno sobre o investimento.",
+          "description3": "Utilizamos ferramentas avançadas de segmentação, remarketing e otimização contínua para garantir que cada real investido gere resultados mensuráveis.",
+          "technologies": {
+            "title": "Plataformas Avançadas",
+            "description": "Google Ads, Facebook Ads, LinkedIn Ads e ferramentas de analytics."
+          }
+        },
+        "benefits": {
+          "title": "Benefícios do Tráfego Pago",
+          "subtitle": "Por que investir em campanhas de tráfego pago?",
+          "targeting": {
+            "title": "Segmentação Precisa",
+            "description": "Atinge exatamente o público que interessa ao seu negócio"
+          },
+          "measurable": {
+            "title": "Resultados Mensuráveis",
+            "description": "Métricas detalhadas e ROI calculável"
+          },
+          "scalable": {
+            "title": "Escalabilidade",
+            "description": "Aumente ou diminua investimentos conforme necessário"
+          },
+          "fast": {
+            "title": "Resultados Rápidos",
+            "description": "Veja resultados em dias, não em meses"
+          }
+        },
+        "process": {
+          "title": "Como Gerenciamos",
+          "subtitle": "Nosso processo de gestão de campanhas",
+          "research": {
+            "step": "01",
+            "title": "Pesquisa de Mercado",
+            "description": "Análise de concorrência e público-alvo"
+          },
+          "strategy": {
+            "step": "02",
+            "title": "Estratégia de Campanha",
+            "description": "Definição de objetivos e táticas"
+          },
+          "execution": {
+            "step": "03",
+            "title": "Execução",
+            "description": "Criação e lançamento das campanhas"
+          },
+          "optimization": {
+            "step": "04",
+            "title": "Otimização",
+            "description": "Monitoramento e ajustes contínuos"
+          }
+        },
+        "caseStudy": {
+          "title": "Case de Sucesso",
+          "subtitle": "Veja como otimizamos as campanhas da E-commerce Plus",
+          "title2": "E-commerce Plus - Campanhas Google Ads",
+          "description": "A E-commerce Plus precisava aumentar suas vendas online. Implementamos uma estratégia completa de tráfego pago que incluiu:",
+          "features": [
+            "Campanhas de pesquisa e display no Google Ads",
+            "Remarketing no Facebook e Instagram",
+            "Otimização contínua baseada em dados"
+          ],
+          "testimonial": "A Simplí Digital transformou completamente nossas campanhas de tráfego pago. Conseguimos aumentar nossas vendas em 200% e reduzir o custo por aquisição em 40%.",
+          "author": "Ana Costa, Marketing Manager da E-commerce Plus",
+          "results": {
+            "title": "Resultados",
+            "sales": {
+              "value": "200%",
+              "label": "Aumento em vendas"
+            },
+            "cpa": {
+              "value": "40%",
+              "label": "Redução CPA"
+            }
+          }
+        },
+        "cta": {
+          "title": "Pronto para Aumentar suas Vendas?",
+          "description": "Entre em contato conosco e descubra como o tráfego pago pode impulsionar seus resultados.",
+          "button": "Solicitar Orçamento"
+        }
       },
       "digitalConsulting": {
         "title": "Consultoria Digital",
         "subtitle": "Estratégia completa de transformação digital",
         "description": "Assessoramos empresas na transformação digital, desde a estratégia até a implementação de soluções tecnológicas.",
-        "features": [
-          "Análise de mercado",
-          "Estratégia digital",
-          "Roadmap tecnológico",
-          "Transformação de processos",
-          "Treinamento de equipes",
-          "Acompanhamento contínuo"
-        ],
-        "methodologies": [
-          "Design Thinking",
-          "Agile/Scrum",
-          "Lean Startup",
-          "Customer Development",
-          "Growth Hacking",
-          "Data-Driven"
-        ]
+        "hero": {
+          "title": "Consultoria Digital",
+          "subtitle": "Estratégia completa de transformação digital para sua empresa.",
+          "cta": "Solicitar Orçamento"
+        },
+        "whatIs": {
+          "title": "O que é Consultoria Digital?",
+          "description1": "Consultoria digital é o processo de assessorar empresas na transformação de seus negócios através da tecnologia e inovação digital.",
+          "description2": "Nossa consultoria abrange desde a análise estratégica até a implementação de soluções tecnológicas, sempre focando em resultados mensuráveis.",
+          "description3": "Trabalhamos com metodologias comprovadas como Design Thinking, Agile e Lean Startup para garantir que a transformação seja eficaz e sustentável.",
+          "technologies": {
+            "title": "Metodologias Comprovadas",
+            "description": "Design Thinking, Agile, Lean Startup e outras metodologias inovadoras."
+          }
+        },
+        "benefits": {
+          "title": "Benefícios da Consultoria Digital",
+          "subtitle": "Por que investir em consultoria digital?",
+          "strategy": {
+            "title": "Estratégia Clara",
+            "description": "Roadmap claro para transformação digital"
+          },
+          "efficiency": {
+            "title": "Maior Eficiência",
+            "description": "Otimização de processos e redução de custos"
+          },
+          "innovation": {
+            "title": "Inovação",
+            "description": "Acesso às melhores práticas e tecnologias"
+          },
+          "results": {
+            "title": "Resultados Mensuráveis",
+            "description": "Métricas claras de sucesso e ROI"
+          }
+        },
+        "process": {
+          "title": "Como Consultamos",
+          "subtitle": "Nosso processo de consultoria digital",
+          "diagnosis": {
+            "step": "01",
+            "title": "Diagnóstico",
+            "description": "Análise completa da situação atual"
+          },
+          "planning": {
+            "step": "02",
+            "title": "Planejamento",
+            "description": "Desenvolvimento da estratégia de transformação"
+          },
+          "implementation": {
+            "step": "03",
+            "title": "Implementação",
+            "description": "Execução das soluções definidas"
+          },
+          "monitoring": {
+            "step": "04",
+            "title": "Monitoramento",
+            "description": "Acompanhamento e otimização contínua"
+          }
+        },
+        "caseStudy": {
+          "title": "Case de Sucesso",
+          "subtitle": "Veja como transformamos a Indústria Moderna",
+          "title2": "Indústria Moderna - Transformação Completa",
+          "description": "A Indústria Moderna, uma empresa tradicional de 30 anos, precisava se adaptar ao mundo digital. Nossa consultoria incluiu:",
+          "features": [
+            "Digitalização de processos internos",
+            "Implementação de CRM e ERP",
+            "Estratégia de marketing digital"
+          ],
+          "testimonial": "A consultoria da Simplí Digital foi fundamental para nossa transformação. Conseguimos aumentar a eficiência em 70% e expandir para novos mercados.",
+          "author": "Carlos Mendes, CEO da Indústria Moderna",
+          "results": {
+            "title": "Resultados",
+            "efficiency": {
+              "value": "70%",
+              "label": "Mais eficiência"
+            },
+            "sales": {
+              "value": "3x",
+              "label": "Mais vendas"
+            }
+          }
+        },
+        "cta": {
+          "title": "Pronto para Transformar seu Negócio?",
+          "description": "Entre em contato conosco e descubra como a consultoria digital pode impulsionar seus resultados.",
+          "button": "Solicitar Orçamento"
+        }
       }
     }
   }

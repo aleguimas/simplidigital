@@ -134,85 +134,373 @@
         "title": "Web Development",
         "subtitle": "Modern and responsive websites and web applications",
         "description": "We create customized web solutions that boost your digital presence and convert visitors into customers.",
-        "features": [
-          "Responsive and modern websites",
-          "Custom web applications",
-          "Complete e-commerce",
-          "SEO optimization",
-          "System integration",
-          "Maintenance and support"
-        ],
-        "technologies": [
-          "React/Next.js",
-          "Node.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "PostgreSQL/MongoDB",
-          "AWS/Vercel"
-        ]
+        "hero": {
+          "title": "Web Development",
+          "subtitle": "We create modern and responsive websites and landing pages that convert visitors into customers.",
+          "cta": "Request Quote"
+        },
+        "whatIs": {
+          "title": "What is Web Development?",
+          "description1": "Web development is the process of creating websites and web applications that work on the internet. It involves everything from creating institutional websites to complex e-commerce and advanced web applications.",
+          "description2": "We use the most modern technologies in the market, such as React, Next.js, TypeScript and Node.js, to create solutions that not only impress visually, but also offer exceptional performance and superior user experience.",
+          "description3": "Our approach combines creative design with robust technical development, ensuring that each project is unique, functional and aligned with our clients' business objectives.",
+          "technologies": {
+            "title": "Modern Technologies",
+            "description": "React, Next.js, TypeScript, Node.js and much more to create exceptional web experiences."
+          }
+        },
+        "benefits": {
+          "title": "Web Development Benefits",
+          "subtitle": "Why choose our web development services?",
+          "performance": {
+            "title": "Optimized Performance",
+            "description": "Fast and responsive websites that load in seconds"
+          },
+          "seo": {
+            "title": "Advanced SEO",
+            "description": "Complete optimization for search engines"
+          },
+          "responsive": {
+            "title": "Responsive Design",
+            "description": "Works perfectly on all devices"
+          },
+          "security": {
+            "title": "Guaranteed Security",
+            "description": "Complete protection against digital threats"
+          }
+        },
+        "process": {
+          "title": "How We Do It",
+          "subtitle": "Our web development process in 4 steps",
+          "discovery": {
+            "step": "01",
+            "title": "Discovery & Planning",
+            "description": "Deep analysis of project needs and objectives"
+          },
+          "design": {
+            "step": "02",
+            "title": "Design & Prototyping",
+            "description": "Creation of wireframes and interactive prototypes"
+          },
+          "development": {
+            "step": "03",
+            "title": "Development",
+            "description": "Development with the best technologies in the market"
+          },
+          "testing": {
+            "step": "04",
+            "title": "Testing & Launch",
+            "description": "Rigorous testing and optimized launch"
+          }
+        },
+        "caseStudy": {
+          "title": "Success Case",
+          "subtitle": "See how we transformed TechCorp's website",
+          "title2": "TechCorp - Digital Transformation",
+          "description": "TechCorp needed a modern and responsive website that reflected its position as a technology leader. We developed a complete solution that included:",
+          "features": [
+            "Responsive website with modern design",
+            "Complete SEO optimization",
+            "CRM and analytics integration"
+          ],
+          "testimonial": "Simplí Digital completely transformed our online presence. The new website increased our conversions by 150% and significantly improved our Google visibility.",
+          "author": "Maria Silva, CEO of TechCorp",
+          "results": {
+            "title": "Results",
+            "conversions": {
+              "value": "150%",
+              "label": "Increase in conversions"
+            },
+            "traffic": {
+              "value": "3x",
+              "label": "More organic traffic"
+            }
+          }
+        },
+        "cta": {
+          "title": "Ready to Transform Your Website?",
+          "description": "Contact us and discover how we can create a website that boosts your results.",
+          "button": "Request Quote"
+        }
       },
       "aiAgents": {
         "title": "AI Agents",
         "subtitle": "Intelligent automation for your business",
         "description": "We develop customized Artificial Intelligence agents that automate processes and increase your company's efficiency.",
-        "features": [
-          "Intelligent chatbots",
-          "Process automation",
-          "Advanced data analysis",
-          "API integration",
-          "Machine Learning",
-          "Natural language processing"
-        ],
-        "technologies": [
-          "Python",
-          "TensorFlow/PyTorch",
-          "OpenAI API",
-          "LangChain",
-          "FastAPI",
-          "Docker"
-        ]
+        "hero": {
+          "title": "AI Agents",
+          "subtitle": "We develop intelligent chatbots and automations that revolutionize customer service.",
+          "cta": "Request Quote"
+        },
+        "whatIs": {
+          "title": "What are AI Agents?",
+          "description1": "Artificial Intelligence agents are computational systems that can perceive their environment, make decisions and execute actions to achieve specific objectives.",
+          "description2": "Our AI agents are developed with the most advanced technologies, including machine learning, natural language processing and API integration.",
+          "description3": "They can automate repetitive tasks, improve customer service, optimize internal processes and provide valuable insights for decision making.",
+          "technologies": {
+            "title": "Advanced Technologies",
+            "description": "Machine Learning, NLP, APIs and much more to create intelligent automations."
+          }
+        },
+        "benefits": {
+          "title": "AI Agents Benefits",
+          "subtitle": "Why implement AI agents in your business?",
+          "automation": {
+            "title": "Intelligent Automation",
+            "description": "Reduces manual tasks and increases operational efficiency"
+          },
+          "scalability": {
+            "title": "Scalability",
+            "description": "Grows with your business without additional costs"
+          },
+          "insights": {
+            "title": "Valuable Insights",
+            "description": "Real-time data analysis for strategic decisions"
+          },
+          "availability": {
+            "title": "24/7 Availability",
+            "description": "Uninterrupted service and operation"
+          }
+        },
+        "process": {
+          "title": "How We Develop",
+          "subtitle": "Our AI agent development process",
+          "analysis": {
+            "step": "01",
+            "title": "Process Analysis",
+            "description": "Identification of automation opportunities"
+          },
+          "design": {
+            "step": "02",
+            "title": "Solution Design",
+            "description": "Architecture and automation flows"
+          },
+          "development": {
+            "step": "03",
+            "title": "Development",
+            "description": "Implementation with advanced technologies"
+          },
+          "deployment": {
+            "step": "04",
+            "title": "Deploy & Monitoring",
+            "description": "Implementation and continuous monitoring"
+          }
+        },
+        "caseStudy": {
+          "title": "Success Case",
+          "subtitle": "See how we automated E-commerce Plus customer service",
+          "title2": "E-commerce Plus - Customer Service Automation",
+          "description": "E-commerce Plus needed to improve its customer service and reduce operational costs. We implemented AI agents that included:",
+          "features": [
+            "Intelligent chatbot for 24/7 customer service",
+            "Sales process automation",
+            "Real-time data analysis"
+          ],
+          "testimonial": "Simplí Digital's AI agents revolutionized our customer service. We managed to reduce response time by 80% and increase our customer satisfaction.",
+          "author": "João Santos, CTO of E-commerce Plus",
+          "results": {
+            "title": "Results",
+            "response": {
+              "value": "80%",
+              "label": "Reduction in response time"
+            },
+            "satisfaction": {
+              "value": "95%",
+              "label": "Customer satisfaction"
+            }
+          }
+        },
+        "cta": {
+          "title": "Ready to Automate Your Business?",
+          "description": "Contact us and discover how AI can transform your processes.",
+          "button": "Request Quote"
+        }
       },
       "paidTraffic": {
         "title": "Paid Traffic",
         "subtitle": "Digital marketing campaigns that convert",
         "description": "We manage digital marketing campaigns to maximize your ROI and attract qualified leads for your company.",
-        "features": [
-          "Google Ads",
-          "Facebook Ads",
-          "Instagram Ads",
-          "LinkedIn Ads",
-          "Remarketing",
-          "Performance analysis"
-        ],
-        "technologies": [
-          "Google Ads API",
-          "Facebook Business",
-          "Google Analytics",
-          "Google Tag Manager",
-          "Hotjar",
-          "Data Studio"
-        ]
+        "hero": {
+          "title": "Paid Traffic",
+          "subtitle": "We manage digital marketing campaigns to maximize your ROI.",
+          "cta": "Request Quote"
+        },
+        "whatIs": {
+          "title": "What is Paid Traffic?",
+          "description1": "Paid traffic is a digital marketing strategy that involves paying for ads on platforms like Google Ads, Facebook Ads and LinkedIn Ads.",
+          "description2": "Our campaigns are strategically planned to reach the right audience, at the right time, maximizing return on investment.",
+          "description3": "We use advanced targeting tools, remarketing and continuous optimization to ensure that every dollar invested generates measurable results.",
+          "technologies": {
+            "title": "Advanced Platforms",
+            "description": "Google Ads, Facebook Ads, LinkedIn Ads and analytics tools."
+          }
+        },
+        "benefits": {
+          "title": "Paid Traffic Benefits",
+          "subtitle": "Why invest in paid traffic campaigns?",
+          "targeting": {
+            "title": "Precise Targeting",
+            "description": "Reaches exactly the audience that interests your business"
+          },
+          "measurable": {
+            "title": "Measurable Results",
+            "description": "Detailed metrics and calculable ROI"
+          },
+          "scalable": {
+            "title": "Scalability",
+            "description": "Increase or decrease investments as needed"
+          },
+          "fast": {
+            "title": "Fast Results",
+            "description": "See results in days, not months"
+          }
+        },
+        "process": {
+          "title": "How We Manage",
+          "subtitle": "Our campaign management process",
+          "research": {
+            "step": "01",
+            "title": "Market Research",
+            "description": "Competition and target audience analysis"
+          },
+          "strategy": {
+            "step": "02",
+            "title": "Campaign Strategy",
+            "description": "Objective and tactic definition"
+          },
+          "execution": {
+            "step": "03",
+            "title": "Execution",
+            "description": "Campaign creation and launch"
+          },
+          "optimization": {
+            "step": "04",
+            "title": "Optimization",
+            "description": "Continuous monitoring and adjustments"
+          }
+        },
+        "caseStudy": {
+          "title": "Success Case",
+          "subtitle": "See how we optimized E-commerce Plus campaigns",
+          "title2": "E-commerce Plus - Google Ads Campaigns",
+          "description": "E-commerce Plus needed to increase its online sales. We implemented a complete paid traffic strategy that included:",
+          "features": [
+            "Search and display campaigns on Google Ads",
+            "Remarketing on Facebook and Instagram",
+            "Continuous optimization based on data"
+          ],
+          "testimonial": "Simplí Digital completely transformed our paid traffic campaigns. We managed to increase our sales by 200% and reduce cost per acquisition by 40%.",
+          "author": "Ana Costa, Marketing Manager of E-commerce Plus",
+          "results": {
+            "title": "Results",
+            "sales": {
+              "value": "200%",
+              "label": "Increase in sales"
+            },
+            "cpa": {
+              "value": "40%",
+              "label": "CPA reduction"
+            }
+          }
+        },
+        "cta": {
+          "title": "Ready to Increase Your Sales?",
+          "description": "Contact us and discover how paid traffic can boost your results.",
+          "button": "Request Quote"
+        }
       },
       "digitalConsulting": {
         "title": "Digital Consulting",
         "subtitle": "Complete digital transformation strategy",
         "description": "We advise companies on digital transformation, from strategy to implementation of technological solutions.",
-        "features": [
-          "Market analysis",
-          "Digital strategy",
-          "Technology roadmap",
-          "Process transformation",
-          "Team training",
-          "Continuous monitoring"
-        ],
-        "methodologies": [
-          "Design Thinking",
-          "Agile/Scrum",
-          "Lean Startup",
-          "Customer Development",
-          "Growth Hacking",
-          "Data-Driven"
-        ]
+        "hero": {
+          "title": "Digital Consulting",
+          "subtitle": "Complete digital transformation strategy for your company.",
+          "cta": "Request Quote"
+        },
+        "whatIs": {
+          "title": "What is Digital Consulting?",
+          "description1": "Digital consulting is the process of advising companies in transforming their businesses through technology and digital innovation.",
+          "description2": "Our consulting covers everything from strategic analysis to implementation of technological solutions, always focusing on measurable results.",
+          "description3": "We work with proven methodologies such as Design Thinking, Agile and Lean Startup to ensure that transformation is effective and sustainable.",
+          "technologies": {
+            "title": "Proven Methodologies",
+            "description": "Design Thinking, Agile, Lean Startup and other innovative methodologies."
+          }
+        },
+        "benefits": {
+          "title": "Digital Consulting Benefits",
+          "subtitle": "Why invest in digital consulting?",
+          "strategy": {
+            "title": "Clear Strategy",
+            "description": "Clear roadmap for digital transformation"
+          },
+          "efficiency": {
+            "title": "Greater Efficiency",
+            "description": "Process optimization and cost reduction"
+          },
+          "innovation": {
+            "title": "Innovation",
+            "description": "Access to best practices and technologies"
+          },
+          "results": {
+            "title": "Measurable Results",
+            "description": "Clear success metrics and ROI"
+          }
+        },
+        "process": {
+          "title": "How We Consult",
+          "subtitle": "Our digital consulting process",
+          "diagnosis": {
+            "step": "01",
+            "title": "Diagnosis",
+            "description": "Complete analysis of current situation"
+          },
+          "planning": {
+            "step": "02",
+            "title": "Planning",
+            "description": "Development of transformation strategy"
+          },
+          "implementation": {
+            "step": "03",
+            "title": "Implementation",
+            "description": "Execution of defined solutions"
+          },
+          "monitoring": {
+            "step": "04",
+            "title": "Monitoring",
+            "description": "Continuous monitoring and optimization"
+          }
+        },
+        "caseStudy": {
+          "title": "Success Case",
+          "subtitle": "See how we transformed Modern Industry",
+          "title2": "Modern Industry - Complete Transformation",
+          "description": "Modern Industry, a traditional 30-year-old company, needed to adapt to the digital world. Our consulting included:",
+          "features": [
+            "Digitalization of internal processes",
+            "CRM and ERP implementation",
+            "Digital marketing strategy"
+          ],
+          "testimonial": "Simplí Digital's consulting was fundamental for our transformation. We managed to increase efficiency by 70% and expand to new markets.",
+          "author": "Carlos Mendes, CEO of Modern Industry",
+          "results": {
+            "title": "Results",
+            "efficiency": {
+              "value": "70%",
+              "label": "More efficiency"
+            },
+            "sales": {
+              "value": "3x",
+              "label": "More sales"
+            }
+          }
+        },
+        "cta": {
+          "title": "Ready to Transform Your Business?",
+          "description": "Contact us and discover how digital consulting can boost your results.",
+          "button": "Request Quote"
+        }
       }
     }
   }
