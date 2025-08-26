@@ -288,24 +288,24 @@
         },
         "caseStudy": {
           "title": "Case de Sucesso",
-          "subtitle": "Veja como automatizamos o atendimento da E-commerce Plus",
-          "title2": "E-commerce Plus - Automação de Atendimento",
-          "description": "A E-commerce Plus precisava melhorar seu atendimento ao cliente e reduzir custos operacionais. Implementamos agentes de IA que incluíram:",
+          "subtitle": "Veja como automatizamos o atendimento da Natal Home Center",
+          "title2": "Natal Home Center - Atendimento Inteligente",
+          "description": "A Natal Home Center enfrentava o problema de atendimento manual via WhatsApp apenas durante horário comercial. Implementamos uma solução completa de IA que incluiu:",
           "features": [
-            "Chatbot inteligente para atendimento 24/7",
-            "Automação de processos de vendas",
-            "Análise de dados em tempo real"
+            "Agente de IA para WhatsApp 24/7",
+            "Integração com CRM e base de dados",
+            "Plataforma de atendimento para equipe"
           ],
-          "testimonial": "Os agentes de IA da Simplí Digital revolucionaram nosso atendimento. Conseguimos reduzir o tempo de resposta em 80% e aumentar nossa satisfação do cliente.",
-          "author": "João Santos, CTO da E-commerce Plus",
+          "testimonial": "A Simplí Digital revolucionou nosso atendimento ao cliente. O agente de IA reduziu nosso tempo de atendimento em 90% e aumentou significativamente a satisfação dos clientes. Agora atendemos 24/7, mesmo fora do horário comercial.",
+          "author": "Kleber Carvalho, CEO da Natal Home Center",
           "results": {
             "title": "Resultados",
             "response": {
-              "value": "80%",
-              "label": "Redução no tempo de resposta"
+              "value": "90%",
+              "label": "Redução no tempo de atendimento"
             },
             "satisfaction": {
-              "value": "95%",
+              "value": "98%",
               "label": "Satisfação do cliente"
             }
           }

@@ -288,24 +288,24 @@
         },
         "caseStudy": {
           "title": "Success Case",
-          "subtitle": "See how we automated E-commerce Plus customer service",
-          "title2": "E-commerce Plus - Customer Service Automation",
-          "description": "E-commerce Plus needed to improve its customer service and reduce operational costs. We implemented AI agents that included:",
+          "subtitle": "See how we automated Natal Home Center customer service",
+          "title2": "Natal Home Center - Intelligent Customer Service",
+          "description": "Natal Home Center faced the problem of manual WhatsApp customer service only during business hours. We implemented a complete AI solution that included:",
           "features": [
-            "Intelligent chatbot for 24/7 customer service",
-            "Sales process automation",
-            "Real-time data analysis"
+            "AI agent for WhatsApp 24/7",
+            "CRM and database integration",
+            "Customer service platform for team"
           ],
-          "testimonial": "Simplí Digital's AI agents revolutionized our customer service. We managed to reduce response time by 80% and increase our customer satisfaction.",
-          "author": "João Santos, CTO of E-commerce Plus",
+          "testimonial": "Simplí Digital revolutionized our customer service. The AI agent reduced our service time by 90% and significantly increased customer satisfaction. Now we serve 24/7, even outside business hours.",
+          "author": "Kleber Carvalho, CEO of Natal Home Center",
           "results": {
             "title": "Results",
             "response": {
-              "value": "80%",
-              "label": "Reduction in response time"
+              "value": "90%",
+              "label": "Reduction in service time"
             },
             "satisfaction": {
-              "value": "95%",
+              "value": "98%",
               "label": "Customer satisfaction"
             }
           }

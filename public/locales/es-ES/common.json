@@ -288,24 +288,24 @@
         },
         "caseStudy": {
           "title": "Caso de Éxito",
-          "subtitle": "Ve cómo automatizamos el servicio al cliente de E-commerce Plus",
-          "title2": "E-commerce Plus - Automatización de Servicio al Cliente",
-          "description": "E-commerce Plus necesitaba mejorar su servicio al cliente y reducir costos operacionales. Implementamos agentes de IA que incluyeron:",
+          "subtitle": "Ve cómo automatizamos el servicio al cliente de Natal Home Center",
+          "title2": "Natal Home Center - Servicio al Cliente Inteligente",
+          "description": "Natal Home Center enfrentaba el problema de servicio al cliente manual vía WhatsApp solo durante horario comercial. Implementamos una solución completa de IA que incluyó:",
           "features": [
-            "Chatbot inteligente para servicio al cliente 24/7",
-            "Automatización de procesos de ventas",
-            "Análisis de datos en tiempo real"
+            "Agente de IA para WhatsApp 24/7",
+            "Integración con CRM y base de datos",
+            "Plataforma de servicio al cliente para equipo"
           ],
-          "testimonial": "Los agentes de IA de Simplí Digital revolucionaron nuestro servicio al cliente. Conseguimos reducir el tiempo de respuesta en 80% y aumentar nuestra satisfacción del cliente.",
-          "author": "João Santos, CTO de E-commerce Plus",
+          "testimonial": "Simplí Digital revolucionó nuestro servicio al cliente. El agente de IA redujo nuestro tiempo de servicio en 90% y aumentó significativamente la satisfacción del cliente. Ahora servimos 24/7, incluso fuera del horario comercial.",
+          "author": "Kleber Carvalho, CEO de Natal Home Center",
           "results": {
             "title": "Resultados",
             "response": {
-              "value": "80%",
-              "label": "Reducción en tiempo de respuesta"
+              "value": "90%",
+              "label": "Reducción en tiempo de servicio"
             },
             "satisfaction": {
-              "value": "95%",
+              "value": "98%",
               "label": "Satisfacción del cliente"
             }
           }
