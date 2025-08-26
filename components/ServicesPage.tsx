@@ -4,14 +4,14 @@ import { useRef } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { BiCodeBlock, BiBrain, BiBarChart, BiShowAlt } from 'react-icons/bi';
+import ContactPage from './ContactPage';
 import '../lib/i18n';
 
 const ServicesPage = () => {
   const { t } = useTranslation('common');
-  const contactRef = useRef<HTMLDivElement>(null);
 
   const scrollToContact = () => {
-    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+    window.location.href = '/contato';
   };
 
   const services = [
@@ -132,100 +132,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Contact Form */}
-      <div ref={contactRef} className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Solicite um Orçamento
-            </h2>
-            <p className="text-xl text-gray-600">
-              Preencha o formulário abaixo e entraremos em contato em até 24 horas.
-            </p>
-          </div>
-
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Nome Completo *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-simpli-teal focus:border-transparent"
-                  placeholder="Seu nome completo"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-simpli-teal focus:border-transparent"
-                  placeholder="seu@email.com"
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                Empresa
-              </label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-simpli-teal focus:border-transparent"
-                placeholder="Nome da sua empresa"
-              />
-            </div>
-            <div>
-              <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                Serviço de Interesse
-              </label>
-              <select
-                id="service"
-                name="service"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-simpli-teal focus:border-transparent"
-              >
-                <option value="">Selecione um serviço</option>
-                <option value="desenvolvimento-web">Desenvolvimento Web</option>
-                <option value="agentes-ia">Agentes de IA</option>
-                <option value="trafego-pago">Tráfego Pago</option>
-                <option value="consultoria-digital">Consultoria Digital</option>
-                <option value="outro">Outro</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                Mensagem *
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={6}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-simpli-teal focus:border-transparent"
-                placeholder="Conte-nos sobre seu projeto..."
-              ></textarea>
-            </div>
-            <div className="text-center">
-              <button
-                type="submit"
-                className="bg-gradient-simpli text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-              >
-                Enviar Mensagem
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+      <ContactPage />
     </div>
   );
 };

@@ -2,14 +2,14 @@
 
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import ContactPage from './ContactPage';
 import '../lib/i18n';
 
 const ConsultingPage = () => {
   const { t } = useTranslation('common');
-  const contactRef = useRef<HTMLElement>(null);
 
   const handleScrollToContact = () => {
-    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+    window.location.href = '/contato';
   };
 
   const services = [
@@ -188,23 +188,7 @@ const ConsultingPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section ref={contactRef} className="py-20 bg-gradient-simpli text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Pronto para Começar seu Projeto?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Entre em contato conosco e descubra como podemos transformar sua empresa com soluções digitais inovadoras.
-          </p>
-          <button
-            onClick={handleScrollToContact}
-                            className="bg-white text-simpli-teal px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
-          >
-            Solicitar Orçamento
-          </button>
-        </div>
-      </section>
+      <ContactPage />
     </>
   );
 };

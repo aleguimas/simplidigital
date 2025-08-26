@@ -278,19 +278,7 @@ const ContactPage = () => {
                     </div>
                 </div>
 
-                {/* Telefone */}
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-simpli-teal rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                    <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Telefone</h3>
-                    <p className="text-gray-600">+55 (81) 99194-2628</p>
-                    <p className="text-gray-600">+55 (11) 99999-9999</p>
-                  </div>
-                </div>
+
 
                 {/* Endereço */}
                 <div className="flex items-start">
@@ -302,7 +290,6 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Endereço</h3>
-                    <p className="text-gray-600">São Paulo, SP - Brasil</p>
                     <p className="text-gray-600">Recife, PE - Brasil</p>
                   </div>
                 </div>
@@ -336,14 +323,14 @@ const ContactPage = () => {
           
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1234567890123!2d-46.6388!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2c0b0b0b%3A0x0!2s0x94ce5a2b2c0b0b0b%3A0x0!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1234567890123!2d-34.8812!3d-8.0476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab196a3c0b0b0b%3A0x0!2s0x7ab196a3c0b0b0b%3A0x0!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
               width="100%"
               height="450"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localização Simplí Digital"
+              title="Localização Simplí Digital - Recife"
               className="w-full"
             />
           </div>
