@@ -70,7 +70,7 @@
       "message": "Mensaje",
       "submit": "Enviar Mensaje",
       "sending": "Enviando...",
-      "success": "¡Mensaje enviado con éxito!",
+      "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.",
       "error": "Error al enviar mensaje. Inténtalo de nuevo."
     },
     "info": {

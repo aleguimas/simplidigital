@@ -22,6 +22,7 @@ const ContactPage = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   // Regex para validação
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -101,21 +102,42 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulação de envio (substitua por sua API real)
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      setSubmitSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        message: ''
+      // Envio para Formspree
+      const response = await fetch('https://formspree.io/f/xrbagyyp', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          message: formData.message,
+          _subject: `Novo contato do site - ${formData.name} (${formData.company})`
+        })
       });
-      
-      // Reset do sucesso após 5 segundos
-      setTimeout(() => setSubmitSuccess(false), 5000);
+
+      if (response.ok) {
+        setSubmitSuccess(true);
+        setSubmitError(false);
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          message: ''
+        });
+        
+        // Reset do sucesso após 5 segundos
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      } else {
+        throw new Error('Erro ao enviar formulário');
+      }
     } catch (error) {
       console.error('Erro ao enviar formulário:', error);
+      setSubmitError(true);
+      setSubmitSuccess(false);
+      // Reset do erro após 5 segundos
+      setTimeout(() => setSubmitError(false), 5000);
     } finally {
       setIsSubmitting(false);
     }
@@ -149,7 +171,18 @@ const ContactPage = () => {
                     <svg className="w-5 h-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <p className="text-green-800">Mensagem enviada com sucesso! Entraremos em contato em breve.</p>
+                    <p className="text-green-800">{t('contact.form.success')}</p>
+                  </div>
+                </div>
+              )}
+
+              {submitError && (
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                  <div className="flex">
+                    <svg className="w-5 h-5 text-red-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    <p className="text-red-800">{t('contact.form.error')}</p>
                   </div>
                 </div>
               )}
