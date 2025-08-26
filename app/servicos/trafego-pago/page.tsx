@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import ContactPage from '@/components/ContactPage';
-import '../../lib/i18n';
+import '../../../lib/i18n';
 
 export default function TrafegoPago() {
   const { t } = useTranslation('common');
@@ -222,7 +222,7 @@ export default function TrafegoPago() {
                     {t('pages.serviceDetails.paidTraffic.caseStudy.description')}
                   </p>
                   <ul className="space-y-2 mb-6">
-                    {t('pages.serviceDetails.paidTraffic.caseStudy.features', { returnObjects: true }).map((feature: string, index: number) => (
+                    {(t('pages.serviceDetails.paidTraffic.caseStudy.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
                       <li key={index} className="flex items-center text-gray-600">
                         <svg className="w-4 h-4 text-simpli-green mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
