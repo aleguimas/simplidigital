@@ -1,9 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useWhatsAppMessage } from '@/lib/useWhatsAppMessage';
+import '../lib/i18n';
 
 const FloatingWhatsApp = () => {
+  const { t } = useTranslation('common');
   const [isVisible, setIsVisible] = useState(false);
+  const { whatsappUrl } = useWhatsAppMessage();
 
   useEffect(() => {
     // Delay para animação de entrada
@@ -15,10 +20,6 @@ const FloatingWhatsApp = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent('Olá! Quero saber mais sobre a Simplí');
-    const phoneNumber = '5581991942628';
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-    
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -55,7 +56,7 @@ const FloatingWhatsApp = () => {
         {/* Tooltip para desktop */}
         <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 hidden md:block">
           <div className="bg-gray-900 text-white text-sm px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Fale conosco no WhatsApp
+            {t('whatsapp.tooltip')}
             <div className="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-900"></div>
           </div>
         </div>

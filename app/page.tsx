@@ -2,12 +2,15 @@
 
 import { useRef } from 'react';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 import Layout from '@/components/Layout';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import SEO from '@/components/SEO';
+import '../lib/i18n';
 
 export default function Home() {
+  const { t } = useTranslation('common');
   const contactRef = useRef<HTMLElement>(null);
 
   const scrollToContact = () => {
@@ -42,11 +45,10 @@ export default function Home() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                  Por que escolher a <span className="text-transparent bg-clip-text bg-gradient-to-r from-simpli-green to-simpli-teal">Simplí</span>?
+                  {t('whyChoose.title')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-simpli-green to-simpli-teal">{t('whyChoose.subtitle')}</span>?
                 </h2>
                 <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-                  Combinamos expertise técnica com uma abordagem personalizada para entregar soluções 
-                  que realmente fazem a diferença no seu negócio.
+                  {t('whyChoose.description')}
                 </p>
               </div>
             </div>
@@ -59,15 +61,13 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  Sobre a <span className="text-transparent bg-clip-text bg-gradient-to-r from-simpli-green to-simpli-teal">Simplí</span>
+                  {t('about.title')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-simpli-green to-simpli-teal">{t('about.subtitle')}</span>
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Somos uma empresa especializada em transformação digital, focada em criar soluções inovadoras 
-                  que impulsionam o crescimento dos nossos clientes.
+                  {t('about.description1')}
                 </p>
                 <p className="text-lg text-gray-600 mb-8">
-                  Com anos de experiência no mercado, nossa equipe combina conhecimento técnico avançado 
-                  com uma abordagem estratégica para entregar resultados excepcionais.
+                  {t('about.description2')}
                 </p>
                 <a
                   href="/sobre"
@@ -76,7 +76,7 @@ export default function Home() {
                     background: 'linear-gradient(to right, #7ACC00, #00B8B0)'
                   }}
                 >
-                  Saiba Mais
+                  {t('about.cta')}
                 </a>
               </div>
               <div className="bg-gradient-to-br from-simpli-green/5 to-simpli-teal/5 rounded-2xl p-8 border border-simpli-green/10">
@@ -91,11 +91,10 @@ export default function Home() {
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Nossa Missão
+                    {t('about.mission.title')}
                   </h3>
                   <p className="text-gray-600">
-                    Transformar empresas através da inovação digital, fornecendo soluções tecnológicas 
-                    que otimizam processos e impulsionam o crescimento sustentável.
+                    {t('about.mission.description')}
                   </p>
                 </div>
               </div>
@@ -103,7 +102,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Section */}
+                {/* CTA Section */}
         <section 
           ref={contactRef} 
           className="py-20 text-white"
@@ -113,22 +112,21 @@ export default function Home() {
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Pronto para Transformar seu Negócio?
+              {t('cta.title')}
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Entre em contato conosco e descubra como podemos ajudar sua empresa 
-              a alcançar o próximo nível na transformação digital.
+              {t('cta.description')}
             </p>
-                            <a
-                  href="/contato"
-                  className="inline-block px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105 shadow-lg"
-                  style={{
-                    background: 'linear-gradient(to right, #7ACC00, #00B8B0)',
-                    color: 'white'
-                  }}
-                >
-                  Solicitar Orçamento
-                </a>
+            <a
+              href="/contato"
+              className="inline-block px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105 shadow-lg"
+              style={{
+                background: 'linear-gradient(to right, #7ACC00, #00B8B0)',
+                color: 'white'
+              }}
+            >
+              {t('cta.button')}
+            </a>
           </div>
         </section>
       </Layout>

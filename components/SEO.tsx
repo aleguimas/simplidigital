@@ -46,7 +46,7 @@ const SEO = ({
       '@type': 'ContactPoint',
       telephone: '+55-81-99194-2628',
       contactType: 'customer service',
-      email: 'contato@simplidigital.dev'
+      email: 'digitalsimpli@gmail.com'
     },
     sameAs: [
       'https://linkedin.com/company/simpli-digital',

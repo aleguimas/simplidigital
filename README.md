@@ -36,7 +36,7 @@ Crie um arquivo `.env.local` na raiz do projeto com:
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 # Site URL
-NEXT_PUBLIC_SITE_URL=https://simpli-digital.com
+NEXT_PUBLIC_SITE_URL=https://www.simplidigital.dev
 ```
 
 4. Execute o projeto em desenvolvimento:
@@ -138,8 +138,8 @@ O projeto é compatível com qualquer plataforma que suporte Next.js.
 ## 📞 Suporte
 
 Para dúvidas ou suporte, entre em contato:
-- Email: contato@simpli-digital.com
-- Telefone: +55 (11) 99999-9999
+- Email: digitalsimpli@gmail.com
+- Telefone: +55 (81) 99194-2628
 
 ## 📄 Licença
 

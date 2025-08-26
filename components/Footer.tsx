@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
+import '../lib/i18n';
 
 const Footer = () => {
+  const { t } = useTranslation('common');
   return (
     <footer 
       className="text-white"
@@ -24,8 +27,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-white/80 mb-4">
-              Consultoria e desenvolvimento para transformação digital. 
-              Transformamos ideias em soluções digitais inovadoras.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white/80 hover:text-white transition-colors">
@@ -45,26 +47,26 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-white/80 hover:text-white transition-colors">
-                  Início
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
                 <Link href="/sobre" className="text-white/80 hover:text-white transition-colors">
-                  Sobre
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
                 <Link href="/consultorias" className="text-white/80 hover:text-white transition-colors">
-                  Consultorias
+                  {t('nav.consulting')}
                 </Link>
               </li>
               <li>
                 <Link href="/contato" className="text-white/80 hover:text-white transition-colors">
-                  Contato
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -72,7 +74,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contato</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.contact')}</h4>
             <div className="space-y-2 text-white/80">
               <p>digitalsimpli@gmail.com</p>
               <p>+55 (81) 99194-2628</p>
@@ -83,7 +85,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-white/80">
-            © 2025 Simplí. Todos os direitos reservados.
+            {t('footer.copyright')}
           </p>
         </div>
       </div>

@@ -113,15 +113,15 @@ export default function RootLayout({
               description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
               address: {
                 '@type': 'PostalAddress',
-                addressLocality: 'São Paulo',
-                addressRegion: 'SP',
+                addressLocality: 'Recife',
+                addressRegion: 'PE',
                 addressCountry: 'BR'
               },
               contactPoint: {
                 '@type': 'ContactPoint',
                 telephone: '+55-81-99194-2628',
                 contactType: 'customer service',
-                email: 'contato@simplidigital.dev'
+                email: 'digitalsimpli@gmail.com'
               },
               sameAs: [
                 'https://linkedin.com/company/simpli-digital',

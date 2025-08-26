@@ -3,14 +3,84 @@
     "home": "Início",
     "about": "Sobre",
     "consulting": "Consultorias",
-    "contact": "Contato"
+    "contact": "Contato",
+    "services": "Serviços"
   },
   "hero": {
-    "title": "Simplí Inovação Digital",
-    "subtitle": "Consultoria e desenvolvimento para transformação digital",
-    "cta": "Saiba Mais"
+    "title": "Simplificando a",
+    "subtitle": "Transformação Digital",
+    "description": "Transformamos ideias em soluções digitais inovadoras que impulsionam seu negócio.",
+    "ctaPrimary": "Solicitar Orçamento",
+    "ctaSecondary": "Veja em Ação"
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Oferecemos soluções completas para transformação digital",
+    "webDevelopment": {
+      "title": "Desenvolvimento Web",
+      "description": "Criamos sites e landing pages modernos e responsivos utilizando as melhores tecnologias, otimizados para SEO e performance."
+    },
+    "aiAgents": {
+      "title": "Agentes de IA",
+      "description": "Desenvolvemos agentes de Inteligência Artificial personalizados para automatizar processos e aumentar a eficiência do seu negócio."
+    },
+    "paidTraffic": {
+      "title": "Tráfego Pago",
+      "description": "Gerenciamos campanhas em Google Ads, Facebook Ads e LinkedIn Ads, maximizando ROI e atraindo leads qualificados."
+    },
+    "digitalConsulting": {
+      "title": "Consultoria Digital",
+      "description": "Assessoramos empresas na transformação digital, desde a estratégia até a implementação de soluções."
+    }
+  },
+  "whyChoose": {
+    "title": "Por que escolher a",
+    "subtitle": "Simplí",
+    "description": "Combinamos expertise técnica com uma abordagem personalizada para entregar soluções que realmente fazem a diferença no seu negócio."
+  },
+  "about": {
+    "title": "Sobre a",
+    "subtitle": "Simplí",
+    "description1": "Somos uma empresa especializada em transformação digital, focada em criar soluções inovadoras que impulsionam o crescimento dos nossos clientes.",
+    "description2": "Com anos de experiência no mercado, nossa equipe combina conhecimento técnico avançado com uma abordagem estratégica para entregar resultados excepcionais.",
+    "cta": "Saiba Mais",
+    "mission": {
+      "title": "Nossa Missão",
+      "description": "Transformar empresas através da inovação digital, fornecendo soluções tecnológicas que otimizam processos e impulsionam o crescimento sustentável."
+    }
+  },
+  "cta": {
+    "title": "Pronto para Transformar seu Negócio?",
+    "description": "Entre em contato conosco e descubra como podemos ajudar sua empresa a alcançar o próximo nível na transformação digital.",
+    "button": "Solicitar Orçamento"
   },
   "footer": {
-    "copyright": "© 2024 Simplí Inovação Digital. Todos os direitos reservados."
+    "description": "Consultoria e desenvolvimento para transformação digital. Transformamos ideias em soluções digitais inovadoras.",
+    "quickLinks": "Links Rápidos",
+    "contact": "Contato",
+    "copyright": "© 2025 Simplí. Todos os direitos reservados."
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Pronto para transformar seu negócio? Entre em contato conosco e descubra como podemos ajudar sua empresa com soluções digitais inovadoras.",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "company": "Empresa",
+      "message": "Mensagem",
+      "submit": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente."
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "phone": "Telefone",
+      "email": "Email",
+      "address": "Endereço"
+    }
+  },
+  "whatsapp": {
+    "tooltip": "Fale conosco no WhatsApp"
   }
 } 

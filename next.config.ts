@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   trailingSlash: false,
+  i18n: {
+    defaultLocale: 'pt-BR',
+    locales: ['pt-BR', 'en-US', 'es-ES'],
+  },
   experimental: {
     optimizeCss: false, // Desabilitando temporariamente
   },

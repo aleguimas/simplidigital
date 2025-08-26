@@ -3,14 +3,84 @@
     "home": "Home",
     "about": "About",
     "consulting": "Consulting",
-    "contact": "Contact"
+    "contact": "Contact",
+    "services": "Services"
   },
   "hero": {
-    "title": "Simplí Digital Innovation",
-    "subtitle": "Consulting and development for digital transformation",
-    "cta": "Learn More"
+    "title": "Simplifying",
+    "subtitle": "Digital Transformation",
+    "description": "We transform ideas into innovative digital solutions that boost your business.",
+    "ctaPrimary": "Request Quote",
+    "ctaSecondary": "See in Action"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer complete solutions for digital transformation",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "We create modern and responsive websites and landing pages using the best technologies, optimized for SEO and performance."
+    },
+    "aiAgents": {
+      "title": "AI Agents",
+      "description": "We develop customized Artificial Intelligence agents to automate processes and increase your business efficiency."
+    },
+    "paidTraffic": {
+      "title": "Paid Traffic",
+      "description": "We manage campaigns on Google Ads, Facebook Ads and LinkedIn Ads, maximizing ROI and attracting qualified leads."
+    },
+    "digitalConsulting": {
+      "title": "Digital Consulting",
+      "description": "We advise companies on digital transformation, from strategy to solution implementation."
+    }
+  },
+  "whyChoose": {
+    "title": "Why choose",
+    "subtitle": "Simplí",
+    "description": "We combine technical expertise with a personalized approach to deliver solutions that really make a difference in your business."
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "Simplí",
+    "description1": "We are a company specialized in digital transformation, focused on creating innovative solutions that boost our clients' growth.",
+    "description2": "With years of market experience, our team combines advanced technical knowledge with a strategic approach to deliver exceptional results.",
+    "cta": "Learn More",
+    "mission": {
+      "title": "Our Mission",
+      "description": "Transform companies through digital innovation, providing technological solutions that optimize processes and drive sustainable growth."
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Contact us and discover how we can help your company reach the next level in digital transformation.",
+    "button": "Request Quote"
   },
   "footer": {
-    "copyright": "© 2024 Simplí Digital Innovation. All rights reserved."
+    "description": "Consulting and development for digital transformation. We transform ideas into innovative digital solutions.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "copyright": "© 2025 Simplí. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Ready to transform your business? Contact us and discover how we can help your company with innovative digital solutions.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    }
+  },
+  "whatsapp": {
+    "tooltip": "Chat with us on WhatsApp"
   }
 } 

@@ -1,12 +1,15 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
+import '../lib/i18n';
 
 interface HeroProps {
   onScrollToContact: () => void;
 }
 
 const Hero = ({ onScrollToContact }: HeroProps) => {
+  const { t } = useTranslation('common');
 
   const handleScrollToContact = () => {
     onScrollToContact();
@@ -30,38 +33,38 @@ const Hero = ({ onScrollToContact }: HeroProps) => {
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Texto e Botões */}
           <div className="text-center lg:text-left">
-                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-               <span className="text-simpli-teal">Simplificando a</span>{' '}
-               <span className="text-transparent bg-clip-text bg-gradient-to-r from-simpli-green to-simpli-teal">
-                 Transformação Digital
-               </span>
-             </h1>
+                                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <span className="text-simpli-teal">{t('hero.title')}</span>{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-simpli-green to-simpli-teal">
+                {t('hero.subtitle')}
+              </span>
+            </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Transformamos ideias em soluções digitais inovadoras que impulsionam seu negócio.
+              {t('hero.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                             <button
-                 onClick={handleScrollToContact}
-                 className="text-white px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 transform hover:scale-105 shadow-lg"
-                                   style={{
-                    background: 'linear-gradient(to right, #7ACC00, #00B8B0)'
-                  }}
-               >
-                 Solicitar Orçamento
-               </button>
-               
-               <button
-                 onClick={handleSeeInAction}
-                 className="border-2 text-simpli-teal px-8 py-4 rounded-lg font-semibold text-lg hover:bg-simpli-teal hover:text-white transition duration-300 transform hover:scale-105"
-                                   style={{
-                    borderColor: '#00B8B0',
-                    color: '#00B8B0'
-                  }}
-               >
-                 Veja em Ação
-               </button>
+                                           <button
+                onClick={handleScrollToContact}
+                className="text-white px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 transform hover:scale-105 shadow-lg"
+                style={{
+                  background: 'linear-gradient(to right, #7ACC00, #00B8B0)'
+                }}
+              >
+                {t('hero.ctaPrimary')}
+              </button>
+              
+              <button
+                onClick={handleSeeInAction}
+                className="border-2 text-simpli-teal px-8 py-4 rounded-lg font-semibold text-lg hover:bg-simpli-teal hover:text-white transition duration-300 transform hover:scale-105"
+                style={{
+                  borderColor: '#00B8B0',
+                  color: '#00B8B0'
+                }}
+              >
+                {t('hero.ctaSecondary')}
+              </button>
             </div>
           </div>
 

@@ -30,8 +30,8 @@ Este documento descreve as configurações de SEO implementadas no projeto Simpl
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Simplí Digital",
-  "url": "https://simpli-digital.com",
-  "logo": "https://simpli-digital.com/images/logo-simpli-digital.webp",
+  "url": "https://www.simplidigital.dev",
+  "logo": "https://www.simplidigital.dev/images/logo-simpli-digital.webp",
   "description": "Transformação digital e inovação para empresas...",
   "address": {
     "@type": "PostalAddress",
@@ -43,7 +43,7 @@ Este documento descreve as configurações de SEO implementadas no projeto Simpl
     "@type": "ContactPoint",
     "telephone": "+55-81-99194-2628",
     "contactType": "customer service",
-    "email": "contato@simpli-digital.com"
+    "email": "digitalsimpli@gmail.com"
   },
   "sameAs": [
     "https://linkedin.com/company/simpli-digital",
@@ -64,7 +64,7 @@ Este documento descreve as configurações de SEO implementadas no projeto Simpl
 #### **next-sitemap.config.js**
 ```javascript
 {
-  siteUrl: 'https://simpli-digital.com',
+  siteUrl: 'https://www.simplidigital.dev',
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.7,
@@ -93,8 +93,8 @@ Disallow: /api/
 Disallow: /admin/
 Disallow: /_next/
 
-Host: https://simpli-digital.com
-Sitemap: https://simpli-digital.com/sitemap.xml
+Host: https://www.simplidigital.dev
+Sitemap: https://www.simplidigital.dev/sitemap.xml
 ```
 
 ## 🖼️ Imagens para SEO
