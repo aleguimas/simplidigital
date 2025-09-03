@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap && next-sitemap --config next-sitemap-ia.config.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "next-sitemap",
+    "sitemap:ia": "next-sitemap --config next-sitemap-ia.config.js"
   },
   "dependencies": {
     "lottie-react": "^2.4.1",

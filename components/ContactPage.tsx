@@ -9,14 +9,18 @@ const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     company: '',
+    interest: '',
     message: ''
   });
 
   const [errors, setErrors] = useState({
     name: '',
     email: '',
+    phone: '',
     company: '',
+    interest: '',
     message: ''
   });
 
@@ -27,6 +31,7 @@ const ContactPage = () => {
   // Regex para validação
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const nameRegex = /^[a-zA-ZÀ-ÿ\s]{2,50}$/;
+  const phoneRegex = /^[\d\s\(\)\-\+]{10,}$/;
 
   const validateField = (name: string, value: string) => {
     let error = '';
@@ -46,11 +51,23 @@ const ContactPage = () => {
           error = 'Email inválido';
         }
         break;
+      case 'phone':
+        if (!value.trim()) {
+          error = 'Telefone é obrigatório';
+        } else if (!phoneRegex.test(value)) {
+          error = 'Telefone deve ter pelo menos 10 dígitos';
+        }
+        break;
       case 'company':
         if (!value.trim()) {
           error = 'Empresa é obrigatória';
         } else if (value.length < 2) {
           error = 'Nome da empresa deve ter pelo menos 2 caracteres';
+        }
+        break;
+      case 'interest':
+        if (!value.trim()) {
+          error = 'Área de interesse é obrigatória';
         }
         break;
       case 'message':
@@ -65,7 +82,7 @@ const ContactPage = () => {
     return error;
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     
     setFormData(prev => ({
@@ -88,7 +105,9 @@ const ContactPage = () => {
     const newErrors = {
       name: validateField('name', formData.name),
       email: validateField('email', formData.email),
+      phone: validateField('phone', formData.phone),
       company: validateField('company', formData.company),
+      interest: validateField('interest', formData.interest),
       message: validateField('message', formData.message)
     };
 
@@ -111,9 +130,11 @@ const ContactPage = () => {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
+          phone: formData.phone,
           company: formData.company,
+          interest: formData.interest,
           message: formData.message,
-          _subject: `Novo contato do site - ${formData.name} (${formData.company})`
+          _subject: `Novo contato do site - ${formData.name} (${formData.company}) - ${formData.interest}`
         })
       });
 
@@ -123,7 +144,9 @@ const ContactPage = () => {
         setFormData({
           name: '',
           email: '',
+          phone: '',
           company: '',
+          interest: '',
           message: ''
         });
         
@@ -230,6 +253,27 @@ const ContactPage = () => {
                   )}
                 </div>
 
+                {/* Telefone */}
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    Telefone/Celular *
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-simpli-green focus:border-transparent transition-colors ${
+                      errors.phone ? 'border-red-300' : 'border-gray-300'
+                    }`}
+                    placeholder="(81) 99999-9999"
+                  />
+                  {errors.phone && (
+                    <p className="mt-1 text-sm text-red-600">{errors.phone}</p>
+                  )}
+                </div>
+
                 {/* Empresa */}
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
@@ -248,6 +292,35 @@ const ContactPage = () => {
                   />
                   {errors.company && (
                     <p className="mt-1 text-sm text-red-600">{errors.company}</p>
+                  )}
+                </div>
+
+                {/* Área de Interesse */}
+                <div>
+                  <label htmlFor="interest" className="block text-sm font-medium text-gray-700 mb-2">
+                    Área de Interesse *
+                  </label>
+                  <select
+                    id="interest"
+                    name="interest"
+                    value={formData.interest}
+                    onChange={handleInputChange}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-simpli-green focus:border-transparent transition-colors ${
+                      errors.interest ? 'border-red-300' : 'border-gray-300'
+                    }`}
+                  >
+                    <option value="">Selecione uma opção</option>
+                    <option value="Palestra">Palestra</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Consultoria">Consultoria</option>
+                    <option value="Treinamento - Atendimento ao Cliente">Treinamento - Atendimento ao Cliente</option>
+                    <option value="Treinamento - Técnicas de Vendas">Treinamento - Técnicas de Vendas</option>
+                    <option value="Treinamento - Imersão de IA para Negócios">Treinamento - Imersão de IA para Negócios</option>
+                    <option value="Treinamento - Visual Merchandising">Treinamento - Visual Merchandising</option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                  {errors.interest && (
+                    <p className="mt-1 text-sm text-red-600">{errors.interest}</p>
                   )}
                 </div>
 

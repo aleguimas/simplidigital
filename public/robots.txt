@@ -6,7 +6,8 @@ Disallow: /admin/
 Disallow: /_next/
 
 # Host
-Host: https://www.simplidigital.dev
+Host: https://www.simpli.ia.br
 
 # Sitemaps
+Sitemap: https://www.simpli.ia.br/sitemap.xml
 Sitemap: https://www.simplidigital.dev/sitemap.xml

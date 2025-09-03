@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  // Headers de segurança
+  // Headers de segurança e CORS para múltiplos domínios
   async headers() {
     return [
       {
@@ -36,17 +36,46 @@ const nextConfig: NextConfig = {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin',
           },
+          // CORS para múltiplos domínios
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: 'https://www.simplidigital.dev, https://www.simpli.ia.br',
+          },
         ],
       },
     ];
   },
-  // Redirecionamentos para garantir o domínio correto
+  
+  // Configuração para múltiplos domínios
   async redirects() {
     return [
       {
         source: '/sitemap.xml',
         destination: 'https://www.simplidigital.dev/sitemap.xml',
         permanent: true,
+      },
+      // Redirecionamentos específicos para simpli.ia.br
+      {
+        source: '/treinamentos/imersao-ia-generativa',
+        destination: 'https://www.simpli.ia.br/treinamentos/imersao-ia-generativa',
+        permanent: true,
+        has: [
+          {
+            type: 'host',
+            value: 'simpli.ia.br',
+          },
+        ],
+      },
+      {
+        source: '/treinamentos',
+        destination: 'https://www.simpli.ia.br/treinamentos',
+        permanent: true,
+        has: [
+          {
+            type: 'host',
+            value: 'simpli.ia.br',
+          },
+        ],
       },
     ];
   },

@@ -4,7 +4,8 @@
     "about": "Sobre",
     "consulting": "Consultorias",
     "contact": "Contato",
-    "services": "Serviços"
+    "services": "Serviços",
+    "training": "Treinamentos"
   },
   "hero": {
     "title": "Simplificando a",
@@ -500,8 +501,33 @@
           "title": "Pronto para Transformar seu Negócio?",
           "description": "Entre em contato conosco e descubra como a consultoria digital pode impulsionar seus resultados.",
           "button": "Solicitar Orçamento"
-        }
+              }
+    },
+    "training": {
+      "title": "Treinamentos In Company",
+      "subtitle": "Transforme sua equipe com treinamentos corporativos especializados",
+      "description": "Oferecemos treinamentos in company em IA Generativa, Atendimento ao Cliente, Técnicas de Vendas e Oratória para impulsionar os resultados da sua empresa.",
+      "iaGenerativa": {
+        "title": "Imersão de IA Generativa",
+        "subtitle": "Transforme sua equipe com o poder da Inteligência Artificial",
+        "description": "Capacite sua equipe para utilizar ferramentas de IA generativa como ChatGPT, Midjourney e outras tecnologias emergentes."
+      },
+      "atendimentoCliente": {
+        "title": "Atendimento ao Cliente Físico e Online",
+        "subtitle": "Excelência no atendimento em todos os canais",
+        "description": "Desenvolva habilidades essenciais para oferecer um atendimento excepcional tanto no ambiente físico quanto digital."
+      },
+      "tecnicasVendas": {
+        "title": "Técnicas de Vendas Físico e Online",
+        "subtitle": "Vendas que convertem em qualquer ambiente",
+        "description": "Domine técnicas avançadas de vendas para ambientes físicos e digitais, aumentando suas conversões e receita."
+      },
+      "oratoriaVendas": {
+        "title": "Oratória para Vendas",
+        "subtitle": "Comunicação persuasiva que vende",
+        "description": "Desenvolva habilidades de oratória e apresentação para vender com confiança e impactar audiências."
       }
     }
   }
+}
 } 

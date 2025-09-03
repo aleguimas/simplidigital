@@ -13,6 +13,7 @@ module.exports = {
     ],
     additionalSitemaps: [
       'https://www.simplidigital.dev/sitemap.xml',
+      'https://www.simpli.ia.br/sitemap.xml',
     ],
   },
   exclude: ['/api/*', '/admin/*', '/_next/*'],
@@ -44,6 +45,31 @@ module.exports = {
       priority: 0.9,
       lastmod: new Date().toISOString(),
     },
+
+    {
+      loc: '/treinamentos/imersao-ia-generativa',
+      changefreq: 'weekly',
+      priority: 0.9,
+      lastmod: new Date().toISOString(),
+    },
+    {
+      loc: '/treinamentos/atendimento-cliente',
+      changefreq: 'weekly',
+      priority: 0.9,
+      lastmod: new Date().toISOString(),
+    },
+    {
+      loc: '/treinamentos/tecnicas-vendas',
+      changefreq: 'weekly',
+      priority: 0.9,
+      lastmod: new Date().toISOString(),
+    },
+    {
+      loc: '/treinamentos/oratoria-vendas',
+      changefreq: 'weekly',
+      priority: 0.9,
+      lastmod: new Date().toISOString(),
+    },
   ],
   transform: async (config, path) => {
     // Personalizar prioridades por página
@@ -57,6 +83,9 @@ module.exports = {
       priority = 0.8;
       changefreq = 'monthly';
     } else if (path === '/consultorias') {
+      priority = 0.9;
+      changefreq = 'weekly';
+    } else if (path.startsWith('/treinamentos/')) {
       priority = 0.9;
       changefreq = 'weekly';
     } else if (path === '/contato') {
