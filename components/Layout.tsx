@@ -19,6 +19,8 @@ const Layout = ({ children }: LayoutProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [isTreinamentosMenuOpen, setIsTreinamentosMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isMobileTrainingsOpen, setIsMobileTrainingsOpen] = useState(false);
   const [activeLanguage, setActiveLanguage] = useState(i18n.language || 'pt-BR');
   const { acceptCookies, rejectCookies } = useCookieConsent();
   const megaMenuRef = useRef<HTMLDivElement>(null);
@@ -480,80 +482,177 @@ const Layout = ({ children }: LayoutProps) => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden" id="mobile-menu">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-              <Link 
-                href="/" 
-                className="text-gray-700 hover:text-simpli-teal block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t('nav.home')}
-              </Link>
-              <Link 
-                href="/sobre" 
-                className="text-gray-700 hover:text-simpli-teal block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t('nav.about')}
-              </Link>
-              <Link 
-                href="/servicos" 
-                className="text-gray-700 hover:text-simpli-teal block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Serviços
-              </Link>
-              <div className="px-3 py-2">
-                <div className="text-sm font-medium text-gray-700 mb-2">Treinamentos</div>
-                <div className="space-y-2 pl-4">
-                  <Link 
-                    href="/treinamentos/imersao-ia-generativa" 
-                    className="text-gray-600 hover:text-simpli-teal block text-sm transition-colors duration-200"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    • Imersão de IA para Negócios
-                  </Link>
-                  <Link 
-                    href="/treinamentos/atendimento-cliente" 
-                    className="text-gray-600 hover:text-simpli-teal block text-sm transition-colors duration-200"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    • Atendimento ao Cliente
-                  </Link>
-                  <Link 
-                    href="/treinamentos/tecnicas-vendas" 
-                    className="text-gray-600 hover:text-simpli-teal block text-sm transition-colors duration-200"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    • Técnicas de Vendas
-                  </Link>
-                  <Link 
-                    href="/treinamentos/visual-merchandising" 
-                    className="text-gray-600 hover:text-simpli-teal block text-sm transition-colors duration-200"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    • Visual Merchandising
-                  </Link>
-                </div>
-              </div>
-              <Link 
-                href="/contato" 
-                className="text-gray-700 hover:text-simpli-teal block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t('nav.contact')}
-              </Link>
-
-              {/* Mobile Language Selector */}
-              <div className="px-3 py-2">
-                <select
-                  value={activeLanguage}
-                  onChange={(e) => handleLanguageChange(e.target.value)}
-                  className="bg-white border border-gray-300 rounded-md px-3 py-2 text-sm w-full focus:outline-none focus:ring-2 focus:ring-simpli-teal focus:border-transparent"
+            <div className="px-4 pt-4 pb-6 bg-white shadow-lg border-t border-gray-200">
+              <div className="space-y-1">
+                {/* Home */}
+                <Link 
+                  href="/" 
+                  className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-base font-medium transition-colors duration-200"
+                  onClick={() => setIsMenuOpen(false)}
                 >
-                  <option value="pt-BR">🇧🇷 Português</option>
-                  <option value="en-US">🇺🇸 English</option>
-                  <option value="es-ES">🇪🇸 Español</option>
-                </select>
+                  <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  {t('nav.home')}
+                </Link>
+
+                {/* About */}
+                <Link 
+                  href="/sobre" 
+                  className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-base font-medium transition-colors duration-200"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  {t('nav.about')}
+                </Link>
+
+                {/* Services - Expandable */}
+                <div>
+                  <button
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                    className="flex items-center justify-between w-full px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-base font-medium transition-colors duration-200"
+                  >
+                    <div className="flex items-center">
+                      <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      Serviços
+                    </div>
+                    <svg 
+                      className={`w-4 h-4 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`}
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  
+                  {isMobileServicesOpen && (
+                    <div className="ml-8 mt-2 space-y-1">
+                      <Link 
+                        href="/servicos/desenvolvimento-web" 
+                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-sm transition-colors duration-200"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                        Desenvolvimento Web
+                      </Link>
+                      <Link 
+                        href="/servicos/agentes-ia" 
+                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-sm transition-colors duration-200"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                        Agentes de IA
+                      </Link>
+                      <Link 
+                        href="/servicos/trafego-pago" 
+                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-sm transition-colors duration-200"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                        Tráfego Pago
+                      </Link>
+                      <Link 
+                        href="/servicos/consultoria-digital" 
+                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-sm transition-colors duration-200"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                        Consultoria Digital
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
+                {/* Trainings - Expandable */}
+                <div>
+                  <button
+                    onClick={() => setIsMobileTrainingsOpen(!isMobileTrainingsOpen)}
+                    className="flex items-center justify-between w-full px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-base font-medium transition-colors duration-200"
+                  >
+                    <div className="flex items-center">
+                      <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                      Treinamentos
+                    </div>
+                    <svg 
+                      className={`w-4 h-4 transition-transform duration-200 ${isMobileTrainingsOpen ? 'rotate-180' : ''}`}
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  
+                  {isMobileTrainingsOpen && (
+                    <div className="ml-8 mt-2 space-y-1">
+                      <Link 
+                        href="/treinamentos/imersao-ia-generativa" 
+                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-sm transition-colors duration-200"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                        Imersão de IA para Negócios
+                      </Link>
+                      <Link 
+                        href="/treinamentos/atendimento-cliente" 
+                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-sm transition-colors duration-200"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                        Atendimento ao Cliente
+                      </Link>
+                      <Link 
+                        href="/treinamentos/tecnicas-vendas" 
+                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-sm transition-colors duration-200"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                        Técnicas de Vendas
+                      </Link>
+                      <Link 
+                        href="/treinamentos/visual-merchandising" 
+                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-sm transition-colors duration-200"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <div className="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
+                        Visual Merchandising
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
+                {/* Contact */}
+                <Link 
+                  href="/contato" 
+                  className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-simpli-teal rounded-lg text-base font-medium transition-colors duration-200"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <svg className="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  {t('nav.contact')}
+                </Link>
+
+                {/* Language Selector */}
+                <div className="px-4 py-3 border-t border-gray-200 mt-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Idioma</label>
+                  <select
+                    value={activeLanguage}
+                    onChange={(e) => handleLanguageChange(e.target.value)}
+                    className="bg-white border border-gray-300 rounded-lg px-3 py-2 text-sm w-full focus:outline-none focus:ring-2 focus:ring-simpli-teal focus:border-transparent"
+                  >
+                    <option value="pt-BR">🇧🇷 Português</option>
+                    <option value="en-US">🇺🇸 English</option>
+                    <option value="es-ES">🇪🇸 Español</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
