@@ -322,7 +322,7 @@ const Layout = ({ children }: LayoutProps) => {
                     <div className="space-y-3">
                       <Link
                         href="/treinamentos/imersao-ia-generativa"
-                        className="group p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+                        className="group p-4 rounded-lg hover:bg-gray-50 transition-colors duration-200"
                         role="menuitem"
                         tabIndex={isTreinamentosMenuOpen ? 0 : -1}
                       >
@@ -347,7 +347,7 @@ const Layout = ({ children }: LayoutProps) => {
 
                       <Link
                         href="/treinamentos/atendimento-cliente"
-                        className="group p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+                        className="group p-4 rounded-lg hover:bg-gray-50 transition-colors duration-200"
                         role="menuitem"
                         tabIndex={isTreinamentosMenuOpen ? 0 : -1}
                       >
@@ -372,7 +372,7 @@ const Layout = ({ children }: LayoutProps) => {
 
                       <Link
                         href="/treinamentos/tecnicas-vendas"
-                        className="group p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+                        className="group p-4 rounded-lg hover:bg-gray-50 transition-colors duration-200"
                         role="menuitem"
                         tabIndex={isTreinamentosMenuOpen ? 0 : -1}
                       >
@@ -397,7 +397,7 @@ const Layout = ({ children }: LayoutProps) => {
 
                       <Link
                         href="/treinamentos/visual-merchandising"
-                        className="group p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+                        className="group p-4 rounded-lg hover:bg-gray-50 transition-colors duration-200"
                         role="menuitem"
                         tabIndex={isTreinamentosMenuOpen ? 0 : -1}
                       >
