@@ -7,6 +7,8 @@ import { useState, useRef, useEffect } from 'react';
 import '../lib/i18n';
 import FloatingWhatsApp from './FloatingWhatsApp';
 import Footer from './Footer';
+import CookieBanner from './CookieBanner';
+import { useCookieConsent } from '../lib/useCookieConsent';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -18,6 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [isTreinamentosMenuOpen, setIsTreinamentosMenuOpen] = useState(false);
   const [activeLanguage, setActiveLanguage] = useState(i18n.language || 'pt-BR');
+  const { acceptCookies, rejectCookies } = useCookieConsent();
   const megaMenuRef = useRef<HTMLDivElement>(null);
   const megaMenuTriggerRef = useRef<HTMLButtonElement>(null);
   const treinamentosMenuRef = useRef<HTMLDivElement>(null);
@@ -567,6 +570,9 @@ const Layout = ({ children }: LayoutProps) => {
 
       {/* Footer */}
       <Footer />
+
+      {/* Cookie Banner */}
+      <CookieBanner onAccept={acceptCookies} onReject={rejectCookies} />
     </div>
   );
 };

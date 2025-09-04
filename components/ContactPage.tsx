@@ -12,7 +12,8 @@ const ContactPage = () => {
     phone: '',
     company: '',
     interest: '',
-    message: ''
+    message: '',
+    consent: false
   });
 
   const [errors, setErrors] = useState({
@@ -21,7 +22,8 @@ const ContactPage = () => {
     phone: '',
     company: '',
     interest: '',
-    message: ''
+    message: '',
+    consent: ''
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -77,21 +79,28 @@ const ContactPage = () => {
           error = 'Mensagem deve ter pelo menos 10 caracteres';
         }
         break;
+      case 'consent':
+        if (!formData.consent) {
+          error = 'Você deve aceitar o tratamento de dados para continuar';
+        }
+        break;
     }
 
     return error;
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
+    const { name, value, type } = e.target;
+    const checked = (e.target as HTMLInputElement).checked;
     
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [name]: type === 'checkbox' ? checked : value
     }));
 
     // Validação em tempo real
-    const error = validateField(name, value);
+    const fieldValue = type === 'checkbox' ? checked : value;
+    const error = validateField(name, fieldValue.toString());
     setErrors(prev => ({
       ...prev,
       [name]: error
@@ -108,7 +117,8 @@ const ContactPage = () => {
       phone: validateField('phone', formData.phone),
       company: validateField('company', formData.company),
       interest: validateField('interest', formData.interest),
-      message: validateField('message', formData.message)
+      message: validateField('message', formData.message),
+      consent: validateField('consent', formData.consent.toString())
     };
 
     setErrors(newErrors);
@@ -134,6 +144,8 @@ const ContactPage = () => {
           company: formData.company,
           interest: formData.interest,
           message: formData.message,
+          consent: formData.consent,
+          consentDate: new Date().toISOString(),
           _subject: `Novo contato do site - ${formData.name} (${formData.company}) - ${formData.interest}`
         })
       });
@@ -147,7 +159,8 @@ const ContactPage = () => {
           phone: '',
           company: '',
           interest: '',
-          message: ''
+          message: '',
+          consent: false
         });
         
         // Reset do sucesso após 5 segundos
@@ -342,6 +355,41 @@ const ContactPage = () => {
                   />
                   {errors.message && (
                     <p className="mt-1 text-sm text-red-600">{errors.message}</p>
+                  )}
+                </div>
+
+                {/* Consentimento LGPD */}
+                <div>
+                  <div className="flex items-start">
+                    <div className="flex items-center h-5">
+                      <input
+                        id="consent"
+                        name="consent"
+                        type="checkbox"
+                        checked={formData.consent}
+                        onChange={handleInputChange}
+                        className={`w-4 h-4 text-simpli-green bg-gray-100 border-gray-300 rounded focus:ring-simpli-green focus:ring-2 ${
+                          errors.consent ? 'border-red-300' : ''
+                        }`}
+                      />
+                    </div>
+                    <div className="ml-3 text-sm">
+                      <label htmlFor="consent" className="text-gray-700">
+                        Eu concordo com o{' '}
+                        <a 
+                          href="/politica-privacidade" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-simpli-green hover:underline font-medium"
+                        >
+                          tratamento dos meus dados pessoais
+                        </a>
+                        {' '}conforme a Política de Privacidade. Os dados coletados serão utilizados exclusivamente para contato comercial e envio de propostas pela Simplí Digital. *
+                      </label>
+                    </div>
+                  </div>
+                  {errors.consent && (
+                    <p className="mt-1 text-sm text-red-600">{errors.consent}</p>
                   )}
                 </div>
 

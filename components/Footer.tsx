@@ -69,6 +69,11 @@ const Footer = () => {
                   {t('nav.contact')}
                 </Link>
               </li>
+              <li>
+                <Link href="/politica-privacidade" className="text-white/80 hover:text-white transition-colors">
+                  Política de Privacidade
+                </Link>
+              </li>
             </ul>
           </div>
 
