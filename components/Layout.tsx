@@ -396,7 +396,7 @@ const Layout = ({ children }: LayoutProps) => {
                       </Link>
 
                       <Link
-                        href="/treinamentos/oratoria-vendas"
+                        href="/treinamentos/visual-merchandising"
                         className="group p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200"
                         role="menuitem"
                         tabIndex={isTreinamentosMenuOpen ? 0 : -1}
