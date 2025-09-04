@@ -32,7 +32,7 @@ export default function VisualMerchandisingPage() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-simpli text-white py-20 lg:py-32">
+      <section className="bg-gradient-to-br from-emerald-600 via-teal-700 to-green-800 text-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
                           <span className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-4">
@@ -76,13 +76,13 @@ export default function VisualMerchandisingPage() {
               href="https://wa.me/81991942628?text=Olá! Gostaria de saber mais sobre o treinamento de Visual Merchandising da Simplí Digital. Pode me enviar mais informações e valores?"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-simpli-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105"
+              className="bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Falar Diretamente
             </a>
             <a
               href="#contato"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-simpli-green transition duration-300 transform hover:scale-105 inline-block text-center"
+              className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 inline-block text-center shadow-lg"
             >
               Solicitar Orçamento
             </a>
@@ -374,13 +374,13 @@ export default function VisualMerchandisingPage() {
                 href="https://wa.me/81991942628?text=Olá! Gostaria de saber mais sobre o treinamento de Visual Merchandising da Simplí Digital. Pode me enviar mais informações e valores?"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-simpli text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition duration-300 transform hover:scale-105"
+                className="bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition duration-300 transform hover:scale-105 shadow-lg"
               >
                 Falar Diretamente
               </a>
               <a
                 href="#contato"
-                className="border-2 border-simpli-green text-simpli-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-simpli-green hover:text-white transition duration-300 transform hover:scale-105 inline-block text-center"
+                className="bg-simpli-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition duration-300 transform hover:scale-105 inline-block text-center shadow-lg"
               >
                 Solicitar Orçamento
               </a>
@@ -442,7 +442,7 @@ export default function VisualMerchandisingPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-simpli text-white">
+      <section className="py-20 bg-gradient-to-br from-emerald-600 via-teal-700 to-green-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Transforme seu ponto de venda hoje mesmo!
@@ -474,13 +474,13 @@ export default function VisualMerchandisingPage() {
               href="https://wa.me/81991942628?text=Olá! Gostaria de solicitar um orçamento para o treinamento de Visual Merchandising da Simplí Digital. Pode me ajudar?"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-simpli-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105"
+              className="bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Falar Diretamente
             </a>
             <a
               href="#contato"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-simpli-green transition duration-300 transform hover:scale-105 inline-block text-center"
+              className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 inline-block text-center shadow-lg"
             >
               Solicitar Orçamento
             </a>
