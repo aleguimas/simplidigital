@@ -170,7 +170,7 @@ export default function PoliticaPrivacidadePage() {
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="text-gray-700 mb-2">
-                    <strong>E-mail:</strong> privacidade@simplidigital.dev
+                    <strong>E-mail:</strong> contato@simpli.ia.br
                   </p>
                   <p className="text-gray-700 mb-2">
                     <strong>Telefone:</strong> (81) 99194-2628

@@ -428,7 +428,7 @@ const ContactPage = () => {
                   </div>
                                       <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-                      <p className="text-gray-600">digitalsimpli@gmail.com</p>
+                      <p className="text-gray-600">contato@simpli.ia.br</p>
                     </div>
                 </div>
 

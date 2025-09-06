@@ -138,7 +138,7 @@ O projeto é compatível com qualquer plataforma que suporte Next.js.
 ## 📞 Suporte
 
 Para dúvidas ou suporte, entre em contato:
-- Email: digitalsimpli@gmail.com
+- Email: contato@simpli.ia.br
 - Telefone: +55 (81) 99194-2628
 
 ## 📄 Licença

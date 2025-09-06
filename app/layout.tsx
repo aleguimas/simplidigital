@@ -123,7 +123,7 @@ export default function RootLayout({
                 '@type': 'ContactPoint',
                 telephone: '+55-81-99194-2628',
                 contactType: 'customer service',
-                email: 'digitalsimpli@gmail.com'
+                email: 'contato@simpli.ia.br'
               },
               sameAs: [
                 'https://linkedin.com/company/simpli-digital',

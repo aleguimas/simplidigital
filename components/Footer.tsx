@@ -81,7 +81,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">{t('footer.contact')}</h4>
             <div className="space-y-2 text-white/80">
-              <p>digitalsimpli@gmail.com</p>
+              <p>contato@simpli.ia.br</p>
               <p>+55 (81) 99194-2628</p>
               <p>Recife, PE - Brasil</p>
             </div>

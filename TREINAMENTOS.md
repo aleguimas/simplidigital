@@ -119,7 +119,7 @@ Cada página de treinamento inclui:
 ## Contato
 
 Para dúvidas sobre a implementação dos treinamentos:
-- **Email:** digitalsimpli@gmail.com
+- **Email:** contato@simpli.ia.br
 - **WhatsApp:** +55 81 99194-2628
 - **Equipe:** Simplí Digital
 
