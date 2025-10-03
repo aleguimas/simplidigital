@@ -102,6 +102,122 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Clients Section */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Empresas que confiam no nosso trabalho
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Parceiros que escolheram a Simplí para impulsionar sua transformação digital.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-mirroah.webp"
+                  alt="Mirroah"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-natal-home-center.webp"
+                  alt="Natal Home Center"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-sebrae.webp"
+                  alt="SEBRAE"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-prefeitura-jaboatao.webp"
+                  alt="Prefeitura de Jaboatão"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-senac.webp"
+                  alt="SENAC"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-liner.webp"
+                  alt="Liner"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-fecomercio-pe.webp"
+                  alt="FECOMÉRCIO PE"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-broomer.webp"
+                  alt="Broomer"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-bluk.webp"
+                  alt="Bluk"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-plaza.webp"
+                  alt="Plaza"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Image
+                  src="/clients/logo-tacaruna.webp"
+                  alt="Tacaruna"
+                  width={240}
+                  height={120}
+                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Training Section */}
         <section className="py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-simpli-teal/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

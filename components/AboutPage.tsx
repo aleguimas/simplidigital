@@ -194,6 +194,33 @@ const AboutPage = () => {
                  className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
                />
              </div>
+             <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+               <Image
+                 src="/clients/logo-bluk.webp"
+                 alt="Bluk"
+                 width={240}
+                 height={120}
+                 className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+               />
+             </div>
+             <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+               <Image
+                 src="/clients/logo-plaza.webp"
+                 alt="Plaza"
+                 width={240}
+                 height={120}
+                 className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+               />
+             </div>
+             <div className="flex items-center justify-center p-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+               <Image
+                 src="/clients/logo-tacaruna.webp"
+                 alt="Tacaruna"
+                 width={240}
+                 height={120}
+                 className="h-24 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+               />
+             </div>
            </div>
         </div>
       </section>
