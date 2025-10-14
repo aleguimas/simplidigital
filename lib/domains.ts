@@ -1,5 +1,5 @@
 export const DOMAINS = {
-  PRIMARY: 'https://www.simplidigital.dev',
+  PRIMARY: 'https://www.simpli.ia.br',
   IA: 'https://www.simpli.ia.br',
 } as const;
 
@@ -27,6 +27,5 @@ export const getAlternateUrls = (path: string) => {
     'pt-BR': `${DOMAINS.PRIMARY}${path}`,
     'en-US': `${DOMAINS.PRIMARY}/en${path}`,
     'es-ES': `${DOMAINS.PRIMARY}/es${path}`,
-    'pt-BR-IA': `${DOMAINS.IA}${path}`,
   };
 };

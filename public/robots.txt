@@ -10,4 +10,3 @@ Host: https://www.simpli.ia.br
 
 # Sitemaps
 Sitemap: https://www.simpli.ia.br/sitemap.xml
-Sitemap: https://www.simplidigital.dev/sitemap.xml

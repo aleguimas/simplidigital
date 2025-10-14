@@ -30,20 +30,20 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.simplidigital.dev'),
+  metadataBase: new URL('https://www.simpli.ia.br'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://www.simplidigital.dev',
+    url: 'https://www.simpli.ia.br',
     siteName: 'Simplí Digital',
     title: 'Simplí Digital - Transformação Digital e Inovação',
     description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
     images: [
       {
-        url: 'https://www.simplidigital.dev/images/og-image.jpg',
+        url: 'https://www.simpli.ia.br/images/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Simplí Digital - Transformação Digital',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Simplí Digital - Transformação Digital e Inovação',
     description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
-    images: ['https://www.simplidigital.dev/images/og-image.jpg'],
+    images: ['https://www.simpli.ia.br/images/og-image.jpg'],
     creator: '@simplidigital',
     site: '@simplidigital',
   },
@@ -110,8 +110,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'Simplí Digital',
-              url: 'https://www.simplidigital.dev',
-              logo: 'https://www.simplidigital.dev/images/logo-simpli-digital.webp',
+              url: 'https://www.simpli.ia.br',
+              logo: 'https://www.simpli.ia.br/images/logo-simpli-digital.webp',
               description: 'Transformação digital e inovação para empresas que buscam se destacar no mercado.',
               address: {
                 '@type': 'PostalAddress',

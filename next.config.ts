@@ -39,7 +39,7 @@ const nextConfig: NextConfig = {
           // CORS para múltiplos domínios
           {
             key: 'Access-Control-Allow-Origin',
-            value: 'https://www.simplidigital.dev, https://www.simpli.ia.br',
+            value: 'https://www.simpli.ia.br',
           },
         ],
       },
@@ -51,7 +51,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/sitemap.xml',
-        destination: 'https://www.simplidigital.dev/sitemap.xml',
+        destination: 'https://www.simpli.ia.br/sitemap.xml',
         permanent: true,
       },
       // Redirecionamentos específicos para simpli.ia.br

@@ -44,7 +44,7 @@ simpli-digital/
 Crie um arquivo `.env.local` na raiz do projeto:
 ```env
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
-NEXT_PUBLIC_SITE_URL=https://www.simplidigital.dev
+NEXT_PUBLIC_SITE_URL=https://www.simpli.ia.br
 ```
 
 #### 2. Domínio Personalizado

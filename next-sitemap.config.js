@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://www.simplidigital.dev',
+  siteUrl: process.env.SITE_URL || 'https://www.simpli.ia.br',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   robotsTxtOptions: {
@@ -12,7 +12,6 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://www.simplidigital.dev/sitemap.xml',
       'https://www.simpli.ia.br/sitemap.xml',
     ],
   },

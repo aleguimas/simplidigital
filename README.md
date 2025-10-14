@@ -36,7 +36,7 @@ Crie um arquivo `.env.local` na raiz do projeto com:
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 # Site URL
-NEXT_PUBLIC_SITE_URL=https://www.simplidigital.dev
+NEXT_PUBLIC_SITE_URL=https://www.simpli.ia.br
 ```
 
 4. Execute o projeto em desenvolvimento:

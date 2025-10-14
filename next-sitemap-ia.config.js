@@ -13,7 +13,6 @@ module.exports = {
     ],
     additionalSitemaps: [
       'https://www.simpli.ia.br/sitemap.xml',
-      'https://www.simplidigital.dev/sitemap.xml',
     ],
   },
   exclude: ['/api/*', '/admin/*', '/_next/*'],
