@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GoogleTagManager, { GoogleTagManagerNoScript } from "@/components/GoogleTagManager";
 import DomainDetector from "@/components/DomainDetector";
 import Script from "next/script";
 
@@ -94,10 +95,12 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Simplí Digital" />
         <meta name="application-name" content="Simplí Digital" />
         <meta name="mobile-web-app-capable" content="yes" />
+        <GoogleTagManager />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GoogleTagManagerNoScript />
         <GoogleAnalytics />
         <DomainDetector />
         
