@@ -24,7 +24,7 @@ const SEO = ({
   noIndex = false,
   breadcrumbs = []
 }: SEOProps) => {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.simpli.ia.br';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://simpli.ia.br';
   const fullUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 

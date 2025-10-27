@@ -6,7 +6,7 @@ Disallow: /admin/
 Disallow: /_next/
 
 # Host
-Host: https://www.simpli.ia.br
+Host: https://simpli.ia.br
 
 # Sitemaps
-Sitemap: https://www.simpli.ia.br/sitemap.xml
+Sitemap: https://simpli.ia.br/sitemap.xml

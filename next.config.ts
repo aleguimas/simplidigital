@@ -39,7 +39,7 @@ const nextConfig: NextConfig = {
           // CORS para múltiplos domínios
           {
             key: 'Access-Control-Allow-Origin',
-            value: 'https://www.simpli.ia.br',
+            value: 'https://simpli.ia.br',
           },
         ],
       },
@@ -49,34 +49,8 @@ const nextConfig: NextConfig = {
   // Configuração para múltiplos domínios
   async redirects() {
     return [
-      {
-        source: '/sitemap.xml',
-        destination: 'https://www.simpli.ia.br/sitemap.xml',
-        permanent: true,
-      },
-      // Redirecionamentos específicos para simpli.ia.br
-      {
-        source: '/treinamentos/imersao-ia-generativa',
-        destination: 'https://www.simpli.ia.br/treinamentos/imersao-ia-generativa',
-        permanent: true,
-        has: [
-          {
-            type: 'host',
-            value: 'simpli.ia.br',
-          },
-        ],
-      },
-      {
-        source: '/treinamentos',
-        destination: 'https://www.simpli.ia.br/treinamentos',
-        permanent: true,
-        has: [
-          {
-            type: 'host',
-            value: 'simpli.ia.br',
-          },
-        ],
-      },
+
+
     ];
   },
 };

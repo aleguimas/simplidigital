@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: 'Simplí Digital',
     images: [
       {
-        url: 'https://simplidigital.com.br/images/agentes-ia-hero.jpg',
+        url: 'https://simpli.ia.br/images/agentes-ia-hero.jpg',
         width: 1200,
         height: 630,
         alt: 'Imersão de IA para Negócios - Simplí Digital - Cobertura Nacional',

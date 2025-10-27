@@ -1,6 +1,6 @@
 export const DOMAINS = {
-  PRIMARY: 'https://www.simpli.ia.br',
-  IA: 'https://www.simpli.ia.br',
+  PRIMARY: 'https://simpli.ia.br',
+  IA: 'https://simpli.ia.br',
 } as const;
 
 export const getCurrentDomain = (): string => {

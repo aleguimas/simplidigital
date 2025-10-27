@@ -10,7 +10,7 @@ export const DOMAIN_CONFIG = {
   
   // Domínio específico para IA
   IA: {
-    domain: 'https://www.simpli.ia.br',
+    domain: 'https://simpli.ia.br',
     name: 'Simplí IA',
     description: 'Especialistas em Inteligência Artificial e Treinamentos',
     focus: 'ai-training',
